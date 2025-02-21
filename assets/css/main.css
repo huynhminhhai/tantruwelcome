@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-Light.woff2') format('woff2'),
+        url('../fonts/Lexend-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-Bold.woff2') format('woff2'),
+        url('../fonts/Lexend-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-Medium.woff2') format('woff2'),
+        url('../fonts/Lexend-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-Regular.woff2') format('woff2'),
+        url('../fonts/Lexend-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-SemiBold.woff2') format('woff2'),
+        url('../fonts/Lexend-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --hover-color: #4db2ec;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #222222;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3,
+h2,
+h1 {
+    font-family: 'SFD-Bold', sans-serif;
+}
