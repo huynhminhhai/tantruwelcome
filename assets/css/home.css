@@ -1,0 +1,53 @@
+/**
+** BANNER
+**/
+
+.banner .banner-pagi {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    z-index: 2;
+}
+
+.banner .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 76px);
+    object-fit: cover;
+}
+
+.banner .banner-pagi .swiper-pagination {
+    background-color: var(--grey-light-color);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 24px;
+    position: relative;
+    bottom: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+}
+
+.banner .swiper-btn-prev,
+.banner .swiper-btn-next {
+    background-color: var(--grey-light-color);
+    z-index: 2;
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.banner .swiper-btn-prev img,
+.banner .swiper-btn-next img {
+    width: 12px;
+    height: auto;
+}

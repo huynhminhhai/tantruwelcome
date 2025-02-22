@@ -1,50 +1,76 @@
 @font-face {
-    font-family: 'Lexend';
-    src: url('../fonts/Lexend-Light.woff2') format('woff2'),
-        url('../fonts/Lexend-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Lexend';
-    src: url('../fonts/Lexend-Bold.woff2') format('woff2'),
-        url('../fonts/Lexend-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Lexend';
-    src: url('../fonts/Lexend-Medium.woff2') format('woff2'),
-        url('../fonts/Lexend-Medium.woff') format('woff');
+    font-family: 'Be Vietnam Pro';
+    src: url('../fonts/BeVietnamPro-Medium.woff2') format('woff2'),
+        url('../fonts/BeVietnamPro-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Lexend';
-    src: url('../fonts/Lexend-Regular.woff2') format('woff2'),
-        url('../fonts/Lexend-Regular.woff') format('woff');
+    font-family: 'Be Vietnam Pro';
+    src: url('../fonts/BeVietnamPro-Bold.woff2') format('woff2'),
+        url('../fonts/BeVietnamPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../fonts/BeVietnamPro-Light.woff2') format('woff2'),
+        url('../fonts/BeVietnamPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../fonts/BeVietnamPro-SemiBold.woff2') format('woff2'),
+        url('../fonts/BeVietnamPro-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../fonts/BeVietnamPro-Thin.woff2') format('woff2'),
+        url('../fonts/BeVietnamPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../fonts/BeVietnamPro-Regular.woff2') format('woff2'),
+        url('../fonts/BeVietnamPro-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Lexend';
-    src: url('../fonts/Lexend-SemiBold.woff2') format('woff2'),
-        url('../fonts/Lexend-SemiBold.woff') format('woff');
-    font-weight: 600;
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-Bold.woff2') format('woff2'),
+        url('../fonts/Merriweather-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 :root {
     --hover-color: #4db2ec;
+    --white-color: #ffffff;
+    --black-color: #222222;
+    --red-color: #B71C1C;
+    --yellow-color: #FFD700;
+    --grey-light-color: #F5F5F5;
+    --green-color: #2E7D32;
+    --primary-color: #B71C1C;
+
 }
 
 ul {
@@ -54,11 +80,11 @@ ul {
 }
 
 body {
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Be Vietnam Pro';
     font-size: 14px;
     line-height: 22px;
-    color: #222222;
-    background-color: #fff;
+    color: var(--black-color);
+    background-color: var(--white-color);
     overflow-x: hidden;
 }
 
@@ -69,5 +95,17 @@ a {
 h3,
 h2,
 h1 {
-    font-family: 'SFD-Bold', sans-serif;
+    font-family: 'Merriweather';
+    font-weight: 500;
 }
+
+/**
+* SWIPER
+**/
+
+.swiper-pagination-bullet-active {
+    background: var(--primary-color);
+}
+
+
+
