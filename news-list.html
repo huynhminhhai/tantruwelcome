@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng Thông tin chào mừng đại hội Đảng - Chi tiết tin tức</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+    <!-- library -->
+    <link rel="stylesheet" href="./assets/library/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/library/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+
+<body id="news-detail">
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="/" class="logo">
+                    <div class="img">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                </a>
+                <nav class="navbar">
+                    <a href="/">Trang chủ</a>
+                    <a href="/">Công trình</a>
+                    <a href="/">Kết quả</a>
+                    <a href="/">Điểm nổi bật</a>
+                    <a href="/">Định hướng</a>
+                    <a href="/camera360.html">Camera 360</a>
+                </nav>
+                <div class="others">
+                    <a href="#search" class="btn-search">
+                        <img src="./assets/images/search.svg" alt="search">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="news">
+            <div class="container">
+                <div class="search-container search-sub">
+                    <div class="search-wrap">
+                        <div class="search-input">
+                            <input type="text" id="search-news" placeholder="Tìm kiếm tin tức - sự kiện...">
+                            <img src="./assets/images/search.svg" alt="search" class="icon-search">
+                        </div>
+                    </div>
+                </div>
+                <div class="news-list">
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250222/thumbnail/348x254/621_1740211997.JPG"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">22/02/2025</div>
+                                </div>
+                                <a href="./news-detail.html" class="card-title">Ông Tạ Thành Bản tái đắc cử chức vụ Bí thư Chi bộ Văn
+                                    phòng HĐND và UBND huyện Tân Trụ</a>
+                                <p class="card-text">
+                                    Đây là 1 trong 2 tổ chức Đảng được huyện Tân Trụ chọn làm điểm tổ chức đại hội nhiệm
+                                    kỳ 2025-2030.
+                                </p>
+                                <a href="./news-detail.html" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250220/thumbnail/348x254/929_1740053610.JPG"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">20/02/2025</div>
+                                </div>
+                                <a href="./news-detail.html" class="card-title">Tân Trụ: Lãnh đạo huyện thăm, làm việc với doanh
+                                    nghiệp</a>
+                                <p class="card-text">
+                                    Những vướng mắc, khó khăn được tháo gỡ kịp thời theo thẩm quyền của địa phương,
+                                    những nội dung vượt thẩm quyền, đoàn ghi nhận, tổng hợp và báo cáo cấp trên để có
+                                    hướng dẫn, giải quyết kịp thời.
+                                </p>
+                                <a href="./news-detail.html" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250219/thumbnail/348x254/609_1739980661.JPG"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">22/02/2025</div>
+                                </div>
+                                <a href="./news-detail.html" class="card-title">Tuổi già nhưng chí không già</a>
+                                <p class="card-text">
+                                    Sự đột phá, sáng tạo, tinh thần "dám nghĩ, dám làm" đã giúp ông Nguyễn Văn Lự thành
+                                    công, phát triển kinh tế gia đình, góp phần xây dựng địa phương.
+                                </p>
+                                <a href="./news-detail.html" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250219/thumbnail/348x254/943_1739977249.jpg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">22/02/2025</div>
+                                </div>
+                                <a href="./news-detail.html" class="card-title">Nông dân tham gia giữ gìn an ninh, trật tự </a>
+                                <p class="card-text">
+                                    Thời gian qua, Hội Nông dân xã Lạc Tấn phối hợp Công an xã và chính quyền địa phương
+                                    triển khai nhiều mô hình thiết thực, góp phần giữ gìn an ninh, trật tự tại địa bàn.
+                                </p>
+                                <a href="./news-detail.html" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250222/thumbnail/348x254/621_1740211997.JPG"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">22/02/2025</div>
+                                </div>
+                                <a href="./news-detail.html" class="card-title">Ông Tạ Thành Bản tái đắc cử chức vụ Bí thư Chi bộ Văn
+                                    phòng HĐND và UBND huyện Tân Trụ</a>
+                                <p class="card-text">
+                                    Đây là 1 trong 2 tổ chức Đảng được huyện Tân Trụ chọn làm điểm tổ chức đại hội nhiệm
+                                    kỳ 2025-2030.
+                                </p>
+                                <a href="./news-detail.html" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250220/thumbnail/348x254/929_1740053610.JPG"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">20/02/2025</div>
+                                </div>
+                                <a href="./news-detail.html" class="card-title">Tân Trụ: Lãnh đạo huyện thăm, làm việc với doanh
+                                    nghiệp</a>
+                                <p class="card-text">
+                                    Những vướng mắc, khó khăn được tháo gỡ kịp thời theo thẩm quyền của địa phương,
+                                    những nội dung vượt thẩm quyền, đoàn ghi nhận, tổng hợp và báo cáo cấp trên để có
+                                    hướng dẫn, giải quyết kịp thời.
+                                </p>
+                                <a href="./news-detail.html" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250219/thumbnail/348x254/609_1739980661.JPG"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">22/02/2025</div>
+                                </div>
+                                <a href="./news-detail.html" class="card-title">Tuổi già nhưng chí không già</a>
+                                <p class="card-text">
+                                    Sự đột phá, sáng tạo, tinh thần "dám nghĩ, dám làm" đã giúp ông Nguyễn Văn Lự thành
+                                    công, phát triển kinh tế gia đình, góp phần xây dựng địa phương.
+                                </p>
+                                <a href="./news-detail.html" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250219/thumbnail/348x254/943_1739977249.jpg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">22/02/2025</div>
+                                </div>
+                                <a href="./news-detail.html" class="card-title">Nông dân tham gia giữ gìn an ninh, trật tự </a>
+                                <p class="card-text">
+                                    Thời gian qua, Hội Nông dân xã Lạc Tấn phối hợp Công an xã và chính quyền địa phương
+                                    triển khai nhiều mô hình thiết thực, góp phần giữ gìn an ninh, trật tự tại địa bàn.
+                                </p>
+                                <a href="./news-detail.html" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <button type="button" disabled="disabled" class="btn-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                            <path fill="none" stroke="#842029" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="4" d="M31 36L19 24l12-12" />
+                        </svg>
+                    </button>
+                    <ul class="pagination-list">
+                        <li class="number active">1</li>
+                        <li class="number">2</li>
+                        <li class="number">3</li>
+                    </ul>
+                    <button type="button" disabled="disabled" class="btn-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                            <path fill="none" stroke="#842029" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="4" d="m19 12l12 12l-12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="infor">
+                        <!-- <div class="logo">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </div> -->
+                        <div class="title">Cổng Thông tin chào mừng đại hội Đảng huyện Tân Trụ</div>
+                        <div class="head">
+                            <div class="name">Ủy ban Nhân dân huyện Tân Trụ</div>
+                            <div class="list">
+                                <div class="item">Địa chỉ: Khu phố Bình Hòa, thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long
+                                    An</div>
+                                <div class="item">Điện thoại: 0272 3867 494</div>
+                                <div class="item">Email: tantru@longan.gov.vn</div>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="name">Huyện ủy Tân Trụ</div>
+                            <div class="list">
+                                <div class="item">Địa chỉ: Ấp Bình Hòa, thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long An
+                                </div>
+                                <div class="item">Điện thoại: 0272 3867 130</div>
+                                <div class="item">Fax: 0272 3681 113</div>
+                                <div class="item">Email: vphutantru@longan.dcs.vn</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <a href="/" class="menu-item">Trang chủ</a>
+                        <a href="#" class="menu-item">Công trình</a>
+                        <a href="#" class="menu-item">Kết quả</a>
+                        <a href="#" class="menu-item">Điểm nổi bật</a>
+                        <a href="#" class="menu-item">Định hướng</a>
+                        <a href="/camera360.html" class="menu-item">Camera360</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="code-by">
+                        Phát triển bởi <img src="./assets/images/logo-vnpt.png" alt="VNPT LONG AN"> VNPT LONG AN
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- library -->
+<script src="./assets/library/jquery/jquery.min.js"></script>
+<script src="./assets/library/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/library/validate/jquery.validate.js"></script>
+<script src="./assets/library/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- js -->
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/map.js"></script>
+
+</html>
