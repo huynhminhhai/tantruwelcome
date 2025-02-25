@@ -1,0 +1,111 @@
+.camera360 {
+    padding-block: 80px;
+    /* background-color: var(--bg-color-2); */
+    position: relative;
+    overflow: hidden;
+}
+
+.camera360 .shape-1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    width: 100%;
+}
+
+.camera360 .camera360-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.camera360 .camera360-list .card {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.camera360 .camera360-list .card-body {
+    padding: 0;
+    padding-top: 6px;
+}
+
+.camera360 .camera360-list .card-top-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.camera360 .camera360-list .card-title {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--text-color);
+    /* text-align: center; */
+}
+
+.camera360 .camera360-list .card-img {
+    position: relative;
+    height: 200px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.camera360 .camera360-item:hover .camera-icon {
+    opacity: 1;
+    visibility: visible;
+}
+
+.camera360 .camera360-list .camera-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 24px;
+    background-color: rgb(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.camera360 .camera360-list .camera-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.camera360-item .close {
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-block: 2px;
+    padding-inline: 4px;
+}
+
+.camera360-item .close .button-close {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.camera360-item iframe {
+    width: 100%;
+    height: calc(100vh - 36px);
+}
+
+.camera360-item .iframe-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.camera360-item .iframe-wrap.active {
+    opacity: 1;
+    visibility: visible;
+}

@@ -62,14 +62,15 @@
     padding-block: 120px;
     background-color: var(--bg-color-2);
     overflow: hidden;
+    position: relative;
 }
 
 .about .shape-1 {
     position: absolute;
+    bottom: -100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -30%);
     width: 100%;
-    
 }
 
 .about .content {
@@ -366,7 +367,7 @@
     top: 0;
     bottom: 0;
     background-color: rgb(54, 81, 64, 0.9);
-    transform: translateY(80%);
+    transform: translateY(81%);
     transition: all 0.3s linear;
 }
 

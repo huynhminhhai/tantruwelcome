@@ -108,17 +108,20 @@ $(document).ready(function () {
         }
     }
 
-    searchBar.addEventListener('input', (e) => {
-        displayResults(e.target.value);
-    });
+    if (searchBar) {
+        searchBar.addEventListener('input', (e) => {
+            displayResults(e.target.value);
+        });
+    
+        document.addEventListener('click', () => {
+            $('#results').removeClass('active')
+        });
+    
+        searchBar.addEventListener('click', (event) => {
+            results.classList.add('active');
+            event.stopPropagation();
+        });
+    }
 
-    document.addEventListener('click', () => {
-        $('#results').removeClass('active')
-    });
-
-    searchBar.addEventListener('click', (event) => {
-        results.classList.add('active');
-        event.stopPropagation();
-    });
 
 });
