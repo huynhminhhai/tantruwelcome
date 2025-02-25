@@ -10,6 +10,7 @@
     <!-- library -->
     <link rel="stylesheet" href="./assets/library/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/library/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/header.css">
@@ -33,11 +34,12 @@
                     <a href="/">Kết quả</a>
                     <a href="/">Điểm nổi bật</a>
                     <a href="/">Định hướng</a>
+                    <a href="/">Camera 360</a>
                 </nav>
                 <div class="others">
-                    <div class="btn-search">
+                    <a href="#search" class="btn-search">
                         <img src="./assets/images/search.svg" alt="search">
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -50,7 +52,8 @@
                         <img src="./assets/images/banner-8.jpg" alt="banner">
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://thanhnien.mediacdn.vn/Uploaded/datdt/2022_01_10/20220102-151017-8941.jpg" alt="banner">
+                        <img src="https://thanhnien.mediacdn.vn/Uploaded/datdt/2022_01_10/20220102-151017-8941.jpg"
+                            alt="banner">
                     </div>
                     <div class="swiper-slide">
                         <img src="./assets/images/banner-5.jpg" alt="banner">
@@ -61,18 +64,494 @@
                 </div>
                 <div class="banner-pagi">
                     <div class="swiper-btn-prev">
-                        <img src="./assets/images/arrow-left.svg" alt="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                                <path
+                                    d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                                <path fill="currentColor"
+                                    d="M13.707 8.465a1 1 0 0 1 0 1.414L11.586 12l2.121 2.121a1 1 0 0 1-1.414 1.415l-2.828-2.829a1 1 0 0 1 0-1.414l2.828-2.828a1 1 0 0 1 1.414 0" />
+                            </g>
+                        </svg>
                     </div>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-btn-next">
-                        <img src="./assets/images/arrow-right.svg" alt="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                                <path
+                                    d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                                <path fill="currentColor"
+                                    d="M10.293 8.465a1 1 0 0 0 0 1.414L12.414 12l-2.121 2.121a1 1 0 0 0 1.414 1.415l2.829-2.829a1 1 0 0 0 0-1.414l-2.829-2.828a1 1 0 0 0-1.414 0" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <img class="shape-1" src="https://staticv2.vnptigate.vn/logo/trong-dong.png" alt="Trống đồng">
+                <h1 class="section-title">
+                    Chào mừng đến với huyện Tân Trụ
+                </h1>
+                <div class="content">
+                    <p>
+                        Huyện Tân Trụ nằm ở phía đông nam tỉnh Long An, thuộc vùng Đồng bằng sông Cửu Long. Với diện
+                        tích 106,5 km² và dân số khoảng 66.500 người, Tân Trụ có hệ thống sông ngòi phong phú, thuận lợi
+                        cho nông nghiệp và giao thông đường thủy.
+                        Huyện gồm 1 thị trấn (Tân Trụ) và 9 xã, với kinh tế chủ yếu dựa vào nông nghiệp, nổi bật là lúa
+                        gạo, thanh long, chanh cùng các làng nghề truyền thống như làng trống Bình An và làng dệt chiếu
+                        An Nhựt Tân.
+                        Tân Trụ cũng là vùng đất giàu truyền thống lịch sử, gắn liền với di tích Vàm Nhựt Tảo và các lễ
+                        hội văn hóa đặc sắc. Nhờ vị trí gần TP. Hồ Chí Minh, nơi đây đang phát triển mạnh mẽ về kinh tế
+                        - xã hội, hướng đến một đô thị hiện đại nhưng vẫn giữ gìn bản sắc địa phương.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="member">
+            <div class="container">
+                <h2 class="section-title">Ủy viên Ban chấp hành Đảng bộ </h2>
+                <div class="member-list">
+                    <div class="swiper-wrapper">
+                        <div class="member-item swiper-slide">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./assets/images/Vo-Tran-Tuan-Thanh.png" alt="Võ Trần Tuấn Thanh" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Võ Trần Tuấn Thanh</div>
+                                    <div class="card-text">Bí thư Huyện ủy</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-item swiper-slide">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./assets/images/Trinh-Phuoc-Trung-1.png" alt="Trịnh Phước Trung"
+                                        class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Ông Trịnh Phước Trung</div>
+                                    <div class="card-text">Phó bí thư huyện ủy</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-item swiper-slide">
+                            <div class="card">
+                                <div class="card-img">
+                                    <!-- <img src="./assets/images/avatar-1.png" alt="Phạm Văn Thái" class="card-img-top"> -->
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Phạm Văn Thái</div>
+                                    <div class="card-text">Ủy viên</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-item swiper-slide">
+                            <div class="card">
+                                <div class="card-img">
+                                    <!-- <img src="./assets/images/avatar-1.png" alt="Đặng Minh Tân" class="card-img-top"> -->
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Đặng Minh Tân</div>
+                                    <div class="card-text">Ủy viên</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-item swiper-slide">
+                            <div class="card">
+                                <div class="card-img">
+                                    <!-- <img src="./assets/images/avatar-1.png" alt="Nguyễn Thị Bích Tuyền" class="card-img-top"> -->
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Nguyễn Thị Bích Tuyền</div>
+                                    <div class="card-text">Ủy viên</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-item swiper-slide">
+                            <div class="card">
+                                <div class="card-img">
+                                    <!-- <img src="./assets/images/avatar-1.png" alt="Lê Hồng Hưng" class="card-img-top"> -->
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Lê Hồng Hưng</div>
+                                    <div class="card-text">Ủy viên</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <!-- <div class="navigation-pagi">
+                        <div class="swiper-btn-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.2" d="m6 8l-4 4l4 4m-4-4h20" />
+                            </svg>
+                        </div>
+                        <div class="swiper-btn-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.2" d="m18 8l4 4l-4 4M2 12h20" />
+                            </svg>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h2 class="section-title">Tin tức - Sự kiện</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250222/thumbnail/348x254/621_1740211997.JPG"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">22/02/2025</div>
+                                </div>
+                                <a href="#" class="card-title">Ông Tạ Thành Bản tái đắc cử chức vụ Bí thư Chi bộ Văn
+                                    phòng HĐND và UBND huyện Tân Trụ</a>
+                                <p class="card-text">
+                                    Đây là 1 trong 2 tổ chức Đảng được huyện Tân Trụ chọn làm điểm tổ chức đại hội nhiệm
+                                    kỳ 2025-2030.
+                                </p>
+                                <a href="#" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250220/thumbnail/348x254/929_1740053610.JPG"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">20/02/2025</div>
+                                </div>
+                                <a href="#" class="card-title">Tân Trụ: Lãnh đạo huyện thăm, làm việc với doanh
+                                    nghiệp</a>
+                                <p class="card-text">
+                                    Những vướng mắc, khó khăn được tháo gỡ kịp thời theo thẩm quyền của địa phương,
+                                    những nội dung vượt thẩm quyền, đoàn ghi nhận, tổng hợp và báo cáo cấp trên để có
+                                    hướng dẫn, giải quyết kịp thời.
+                                </p>
+                                <a href="#" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250219/thumbnail/348x254/609_1739980661.JPG"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">22/02/2025</div>
+                                </div>
+                                <a href="#" class="card-title">Tuổi già nhưng chí không già</a>
+                                <p class="card-text">
+                                    Sự đột phá, sáng tạo, tinh thần "dám nghĩ, dám làm" đã giúp ông Nguyễn Văn Lự thành
+                                    công, phát triển kinh tế gia đình, góp phần xây dựng địa phương.
+                                </p>
+                                <a href="#" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="card-img-top"
+                                    src="https://www.baolongan.vn/image/news/2025/20250219/thumbnail/348x254/943_1739977249.jpg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-sub">
+                                    <div class="category">Tin tức</div>
+                                    <div class="published-date">22/02/2025</div>
+                                </div>
+                                <a href="#" class="card-title">Nông dân tham gia giữ gìn an ninh, trật tự </a>
+                                <p class="card-text">
+                                    Thời gian qua, Hội Nông dân xã Lạc Tấn phối hợp Công an xã và chính quyền địa phương
+                                    triển khai nhiều mô hình thiết thực, góp phần giữ gìn an ninh, trật tự tại địa bàn.
+                                </p>
+                                <a href="#" class="card-btn">Đọc thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-seemore">
+                    <a href="#">
+                        <span>Xem tất cả</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="destination">
+            <!-- <div class="container-fluid"> -->
+            <!-- <div class="section-title">Điểm đến hấp dẫn</div> -->
+            <div class="destination-list">
+                <div class="destination-heading">
+                    <h2 class="title section-title">Địa điểm nổi bật</h2>
+                    <div class="desc">
+                        Tân Trụ cũng có tiềm năng trong lĩnh vực du lịch với những cảnh quan đẹp và di tích lịch sử. Nhờ
+                        sự kết hợp giữa nền kinh tế phát triển và tiềm năng du lịch, huyện Tân Trụ trở thành một điểm
+                        đến thu hút sự quan tâm của du khách và là một trong những địa điểm nên ghé khi du lịch Long An.
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://media2.gody.vn/public/images/destination/1/80/khu-di-tich-lich-su-vam-nhut-tao/pl620094a2a60c0-1644205218.jpeg"
+                                alt="Khu di tích lịch sử Vàm Nhựt Tảo" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">Khu di tích lịch sử Vàm Nhựt Tảo</div>
+                            <div class="card-text">
+                                Vàm Nhựt Tảo là nơi giao hội giữa sông Vàm Cỏ Đông và sông Nhựt Tảo, là nơi đã chứng
+                                kiến chiến công vang dội của anh hùng dân tộc Nguyễn Trung Trực trong việc đốt tàu Pháp.
+                                Nguyễn Trung Trực là một trong những anh hùng nổi tiếng của Việt Nam trong cuộc kháng
+                                chiến chống ách đô hộ của Pháp vào thế kỷ 19. Anh đã dũng cảm dẫn đầu một cuộc kháng
+                                chiến biển chống lại hạm đội Pháp, đặc biệt là việc đốt cháy tàu chiến Pháp tại Vàm Nhựt
+                                Tảo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://cdn.tgdd.vn/Files/2023/11/26/1555979/luu-ngay-5-dia-diem-du-lich-tan-tru-long-an-thu-hut-du-khach-202311262353035414.jpg"
+                                alt="Chùa Cửu Long" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">Chùa Cửu Long</div>
+                            <div class="card-text">
+                                Chùa Cửu Long là một trong những địa danh tôn giáo và du lịch nổi tiếng tại huyện Tân
+                                Trụ, tỉnh Long An. Dựng xây vào thế kỷ 19, chùa Cửu Long có kiến trúc truyền thống của
+                                các ngôi chùa Việt Nam, với các đặc điểm như nóc lượn cong, cột gỗ chạm trổ, và những
+                                bức tranh tượng trưng về đạo Phật và các vị thần trong phật giáo. Chùa là nơi tôn vinh
+                                Đức Phật và là nơi linh thiêng để thực hành thiền định và cầu nguyện cho sự bình an và
+                                hạnh phúc của người dân.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="http://localhost:5500/assets/images/banner-7.jpg"
+                                alt="Khu di tích lịch sử Vàm Nhựt Tảo" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">Chợ Tân Trụ</div>
+                            <div class="card-text">
+                                Chợ Tân Trụ cung cấp một loạt các loại hàng hóa đa dạng, thu hút nhiều người mua bán từ
+                                các vùng lân cận. Chợ Tân Trụ không chỉ là nơi mua sắm mà còn là trung tâm văn hóa và xã
+                                hội quan trọng. Đây là nơi mà người dân có thể gặp gỡ bạn bè, trò chuyện với người dân
+                                địa phương cũng như tìm hiểu văn hóa của người dân nơi đây. Nó cũng là điểm đến thú vị
+                                cho du khách muốn trải nghiệm không gian chợ truyền thống và tìm hiểu về cuộc sống hàng
+                                ngày của người dân địa phương.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://images2.thanhnien.vn/uploaded/minhnguyet/2020_09_28/du-lich1_OJZA.jpg?width=500"
+                                alt="Hàng cau vua" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">Hàng cau vua</div>
+                            <div class="card-text">
+                                Hàng Cau Vua với hơn 30 năm tuổi với khoảng 300 cây trồng 2 bên đường, tạo ra một con
+                                đường vô cùng nên thơ và mát mẻ. Suốt dọc đường có bố trí ghế ngồi và thùng rác, xung
+                                quanh còn được điểm tô bởi vườn thanh long và ruộng lúa. Đây cũng là một trong những địa
+                                điểm được du khách gần xa thích thú ghé đến khi có dịp đến Long An.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://cdn.tgdd.vn/Files/2023/11/26/1555979/luu-ngay-5-dia-diem-du-lich-tan-tru-long-an-thu-hut-du-khach-202311262356026067.jpg"
+                                alt="Công viên Tân Trụ" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">Công viên Tân Trụ</div>
+                            <div class="card-text">
+                                Công viên Tân Trụ có không gian rộng rãi, mát mẻ và được trang trí đèn leg rất đẹp. Đây
+                                là nơi được người dân địa phương tập trung để vui chơi, tập thể dục cũng như gặp gỡ bạn
+                                bè. Nếu có dịp đến Tân Trụ, đừng quên ghé công viên Tân Trụ để được hòa mình vào cuộc
+                                sống yên bình của người dân nơi đây.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <section class="food">
+            <img src="https://staticv2.vnptigate.vn/logo/trong-dong.png" alt="Trống đồng" class="shape-1">
+            <!-- <div class="container"> -->
+            <div class="section-title">
+                Đặc sản trong huyện
+            </div>
+            <div class="section-desc">
+                Khám phá những đặc sản Tân Trụ – từ những món ăn truyền thống đậm đà hương vị miền Tây đến các sản phẩm
+                OCOP chất lượng, mang đậm dấu ấn địa phương.
+            </div>
+            <div class="food-list">
+                <div class="swiper-wrapper">
+                    <div class="food-item swiper-slide">
+                        <div class="food-img">
+                            <img src="http://vnmmoringa.com/wp-content/uploads/2016/01/tra2-600.jpg"
+                                alt="Trà chùm ngây Vườn Nhà Mình">
+                        </div>
+                        <div class="food-infor">
+                            <div class="category">OCOP</div>
+                            <h3 class="name">Trà chùm ngây Vườn Nhà Mình</h3>
+                            <div class="desc">Sản phẩm của Công ty TNHH Vườn Nhà Mình, xã Tân Bình, được công nhận đạt
+                                chuẩn OCOP 4 sao. Công ty chuyên sản xuất các sản phẩm thảo dược chăm sóc sức khỏe và
+                                sắc đẹp từ cây chùm ngây, đinh lăng và một số thảo mộc khác. </div>
+                        </div>
+                    </div>
+                    <div class="food-item swiper-slide">
+                        <div class="food-img">
+                            <img src="https://i0.wp.com/cuulong.org/wp-content/uploads/2022/04/lang-nghe-lam-trong-binh-an-long-an-2.jpg?w=900&ssl=1"
+                                alt="Trống lân Bình An">
+                        </div>
+                        <div class="food-infor">
+                            <div class="category">OCOP</div>
+                            <h3 class="name">Trống lân Bình An</h3>
+                            <div class="desc">Sản phẩm truyền thống của làng nghề trống Bình An, xã Bình Lãng, nổi danh
+                                khắp Nam Kỳ lục tỉnh. Nghề làm trống tại đây đã tồn tại từ cuối thế kỷ XIX và sản phẩm
+                                trống Bình An được biết đến với chất lượng cao, âm thanh vang vọng.</div>
+                        </div>
+                    </div>
+                    <div class="food-item swiper-slide">
+                        <div class="food-img">
+                            <img src="https://danviet.mediacdn.vn/2021/2/16/thah-long-1613413005191-16134130051971031139686.jpg"
+                                alt="Thanh long Tân Trụ">
+                        </div>
+                        <div class="food-infor">
+                            <div class="category">Đặc sản</div>
+                            <h3 class="name">Thanh long Tân Trụ</h3>
+                            <div class="desc">Long An là "vương quốc thanh long" của Việt Nam, và Tân Trụ cũng nổi tiếng
+                                với thanh long chất lượng cao, ngọt, mọng nước. Đây là đặc sản tiềm năng, dù không độc
+                                quyền của Tân Trụ</div>
+                        </div>
+                    </div>
+                    <div class="food-item swiper-slide">
+                        <div class="food-img">
+                            <img src="https://khuyennongvn.gov.vn/portals/0/news_images/2015/10/nguyetkn/dua_hau.jpg">
+                        </div>
+                        <div class="food-infor">
+                            <div class="category">Đặc sản</div>
+                            <h3 class="name">Dưa hấu Tân Trụ</h3>
+                            <div class="desc">Sản phẩm nông sản nổi tiếng của địa phương, được trồng trên vùng đất phù
+                                sa màu mỡ, cho trái ngọt, mọng nước và được thị trường ưa chuộng.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <section class="map">
+            <div class="container">
+                <div class="section-title">Bản đồ du lịch</div>
+                <div class="map-wrap">
+                    <div id="map"></div>
+                    <ul id="location-list"></ul>
+                </div>
+            </div>
+        </section>
+        <section class="search" id="search">
+            <img src="https://staticv2.vnptigate.vn/logo/trong-dong.png" alt="Trống đồng" class="shape-1">
+            <div class="container">
+                <div class="search-container">
+                    <div class="search-wrap">
+                        <div class="search-input">
+                            <input type="text" id="search-bar" placeholder="Tìm kiếm thông tin Tân Trụ...">
+                            <img src="./assets/images/search.svg" alt="search" class="icon-search">
+                            <ul id="results"></ul>
+                        </div>
+                    </div>
+                    <div class="search-button">
+                        <div class="text">Tìm nhanh</div>
+                        <div class="group-btn">
+                            <a href="#">Tin tức</a>
+                            <a href="#">Ủy viên</a>
+                            <a href="#">Điểm đến</a>
+                            <a href="#">Đặc sản</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        footer
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="infor">
+                        <!-- <div class="logo">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </div> -->
+                        <div class="title">Cổng Thông tin chào mừng đại hội Đảng huyện Tân Trụ</div>
+                        <div class="head">
+                            <div class="name">Ủy ban Nhân dân huyện Tân Trụ</div>
+                            <div class="list">
+                                <div class="item">Địa chỉ: Khu phố Bình Hòa, thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long
+                                    An</div>
+                                <div class="item">Điện thoại: 0272 3867 494</div>
+                                <div class="item">Email: tantru@longan.gov.vn</div>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="name">Huyện ủy Tân Trụ</div>
+                            <div class="list">
+                                <div class="item">Địa chỉ: Ấp Bình Hòa, thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long An
+                                </div>
+                                <div class="item">Điện thoại: 0272 3867 130</div>
+                                <div class="item">Fax: 0272 3681 113</div>
+                                <div class="item">Email: vphutantru@longan.dcs.vn</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <a href="#" class="menu-item">Trang chủ</a>
+                        <a href="#" class="menu-item">Công trình</a>
+                        <a href="#" class="menu-item">Kết quả</a>
+                        <a href="#" class="menu-item">Điểm nổi bật</a>
+                        <a href="#" class="menu-item">Định hướng</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="code-by">
+                        Phát triển bởi <img src="./assets/images/logo-vnpt.png" alt="VNPT LONG AN"> VNPT LONG AN
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
@@ -81,9 +560,11 @@
 <script src="./assets/library/swiper/swiper-bundle.min.js"></script>
 <script src="./assets/library/validate/jquery.validate.js"></script>
 <script src="./assets/library/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <!-- js -->
 <script src="./assets/js/main.js"></script>
 <script src="./assets/js/home.js"></script>
+<script src="./assets/js/map.js"></script>
 
 </html>

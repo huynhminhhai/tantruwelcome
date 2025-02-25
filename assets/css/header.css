@@ -4,6 +4,10 @@
     top: 0;
 } */
 
+header {
+    background-color: var(--white-color);
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -28,6 +32,8 @@
     position: relative;
     font-size: 14px;
     line-height: 1;
+    font-weight: 500;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     color: var(--black-color);
 }
