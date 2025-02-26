@@ -138,6 +138,9 @@ h1 {
     font-weight: 400;
 }
 
+.section {
+    padding-bottom: 12px;
+}
 /**
 * SWIPER
 **/
