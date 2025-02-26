@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng Thông tin chào mừng đại hội Đảng - Kết quả thực hiện các chỉ tiêu</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+    <!-- library -->
+    <link rel="stylesheet" href="./assets/library/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/library/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+
+<body id="news-detail">
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="/" class="logo">
+                    <div class="img">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                </a>
+                <nav class="navbar">
+                    <a href="/">Trang chủ</a>
+                    <a href="/">Công trình</a>
+                    <a href="/results.html">Kết quả</a>
+                    <a href="/highlight.html">Điểm nổi bật</a>
+                    <a href="/">Định hướng</a>
+                    <a href="/camera360.html">Camera 360</a>
+                </nav>
+                <div class="others">
+                    <a href="/#search" class="btn-search">
+                        <img src="./assets/images/search.svg" alt="search">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- <section class="banner">
+            <div class="banner-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/banner-8.jpg" alt="banner">
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="result">
+            <div class="container">
+                <h1 class="section-title">Kết quả thực hiện các chỉ 
+                    tiêu NQ XI Đảng bộ 
+                    huyện nhiệm kỳ 2020 – 
+                    2025</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Chỉ tiêu</th>
+                            <th>Mục tiêu</th>
+                            <th>Kết quả thực hiện</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Thu ngân sách bình quân</td>
+                            <td>Đạt 100% dự toán tỉnh giao</td>
+                            <td>Đạt 146%, vượt 11% dự toán</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tổng sản lượng lương thực bình quân hàng năm</td>
+                            <td>65.000 tấn, 50% lúa chất lượng cao (32.500 tấn)</td>
+                            <td>76.144 tấn, lúa chất lượng cao 46.718 tấn</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Số xã đạt chuẩn nông thôn mới nâng cao</td>
+                            <td>Không rõ</td>
+                            <td>5/9 xã</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Tỷ lệ thu gom rác thải trục giao thông chính</td>
+                            <td>Không rõ</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Tỷ lệ hộ sử dụng nước sạch</td>
+                            <td>80%</td>
+                            <td>91,2%</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Tỷ lệ trường đạt chuẩn quốc gia</td>
+                            <td>95%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Số xã đạt tiêu chí quốc gia về y tế</td>
+                            <td>Không rõ</td>
+                            <td>9/9 xã</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Tỷ lệ suy dinh dưỡng thấp còi</td>
+                            <td>Dưới 4,8%</td>
+                            <td>3,78%</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Giảm số hộ nghèo</td>
+                            <td>Giảm 50% (237 hộ)</td>
+                            <td>Giảm 263 hộ (55,6%)</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Số bác sĩ/vạn dân</td>
+                            <td>10 bác sĩ/10.000 dân</td>
+                            <td>4,2 bác sĩ/10.000 dân</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Tỷ lệ người dân tham gia bảo hiểm y tế</td>
+                            <td>97%</td>
+                            <td>95,15%</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Tỷ lệ lao động qua đào tạo</td>
+                            <td>70%, trong đó 40% có bằng cấp</td>
+                            <td>74,75%, trong đó 37,56% có bằng cấp</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="infor">
+                        <!-- <div class="logo">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </div> -->
+                        <div class="title">Cổng Thông tin chào mừng đại hội Đảng huyện Tân Trụ</div>
+                        <div class="head">
+                            <div class="name">Ủy ban Nhân dân huyện Tân Trụ</div>
+                            <div class="list">
+                                <div class="item">Địa chỉ: Khu phố Bình Hòa, thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long
+                                    An</div>
+                                <div class="item">Điện thoại: 0272 3867 494</div>
+                                <div class="item">Email: tantru@longan.gov.vn</div>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="name">Huyện ủy Tân Trụ</div>
+                            <div class="list">
+                                <div class="item">Địa chỉ: Ấp Bình Hòa, thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long An
+                                </div>
+                                <div class="item">Điện thoại: 0272 3867 130</div>
+                                <div class="item">Fax: 0272 3681 113</div>
+                                <div class="item">Email: vphutantru@longan.dcs.vn</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <a href="/" class="menu-item">Trang chủ</a>
+                        <a href="#" class="menu-item">Công trình</a>
+                        <a href="/results.html" class="menu-item">Kết quả</a>
+                        <a href="/highlight.html" class="menu-item">Điểm nổi bật</a>
+                        <a href="#" class="menu-item">Định hướng</a>
+                        <a href="/camera360.html" class="menu-item">Camera360</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="code-by">
+                        Phát triển bởi <img src="./assets/images/logo-vnpt.png" alt="VNPT LONG AN"> VNPT LONG AN
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- library -->
+<script src="./assets/library/jquery/jquery.min.js"></script>
+<script src="./assets/library/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/library/validate/jquery.validate.js"></script>
+<script src="./assets/library/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- js -->
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/map.js"></script>
+
+</html>
