@@ -138,15 +138,15 @@
 .news .news-list .card-sub .category {
     font-size: 13px;
     line-height: 1;
-    font-weight: 500;
-    /* color: var(--black-color); */
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
 .news .news-list .card-sub .published-date {
     font-size: 12px;
     line-height: 1;
     font-weight: 500;
-    /* color: var(--black-color); */
+    color: var(--primary-color);
 }
 
 .news .news-list .card-title {
@@ -241,7 +241,7 @@
 }
 
 .detail .detail-container {
-    padding-inline: 60px;
+    padding-inline: 120px;
 }
 
 .detail .detail-header {
@@ -285,7 +285,7 @@
 .detail .detail-content p {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 /**
@@ -348,7 +348,7 @@
     background-color: var(--white-color);
     border-radius: 4px;
     border: 1px solid var(--primary-color);
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px solid var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .member .member-list .card-title {
@@ -724,12 +724,12 @@
 }
 
 .search .search-input #results li:not(:last-child) {
-    margin-bottom: 2px solid var(--primary-color);
+    margin-bottom: 2px;
 }
 
 .search .search-input #results li {
     font-size: 14px;
-    padding: 6px 24px;
+    padding: 8px 24px;
     background-color: var(--white-color);
     background-color: var(--bg-color-2);
     cursor: pointer;
@@ -789,7 +789,7 @@
 **/
 
 .highlight {
-    padding: 80px 0 120px;
+    padding: 80px 0 0px;
 }
 
 .highlight .highlight-desc {
