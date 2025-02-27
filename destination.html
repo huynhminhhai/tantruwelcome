@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng Thông tin chào mừng đại hội Đảng - Chi tiết tin tức</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+    <!-- library -->
+    <link rel="stylesheet" href="./assets/library/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/library/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+
+<body id="news-detail">
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="/" class="logo">
+                    <div class="img">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                </a>
+                <nav class="navbar">
+                    
+                    <a href="/projects.html">Công trình</a>
+                    <a href="/results.html">Kết quả</a>
+                    <a href="/highlight.html">Điểm nổi bật</a>
+                    <a href="/orientation.html">Định hướng</a>
+                    <a href="/camera360.html">Camera 360</a>
+                </nav>
+                <div class="others">
+                    <a href="/#search" class="btn-search">
+                        <img src="./assets/images/search.svg" alt="search">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="destination destination-all">
+            <div class="container">
+                <div class="search-container search-sub">
+                    <div class="search-wrap">
+                        <div class="search-input">
+                            <input type="text" id="search-destination" placeholder="Tìm kiếm địa điểm...">
+                            <img src="./assets/images/search.svg" alt="search" class="icon-search">
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-list">
+                    <div class="destination-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://media2.gody.vn/public/images/destination/1/80/khu-di-tich-lich-su-vam-nhut-tao/pl620094a2a60c0-1644205218.jpeg"
+                                    alt="Khu di tích lịch sử Vàm Nhựt Tảo" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Khu di tích lịch sử Vàm Nhựt Tảo</div>
+                                <div class="card-text">
+                                    Vàm Nhựt Tảo là nơi giao hội giữa sông Vàm Cỏ Đông và sông Nhựt Tảo, là nơi đã chứng
+                                    kiến chiến công vang dội của anh hùng dân tộc Nguyễn Trung Trực trong việc đốt tàu Pháp.
+                                    Nguyễn Trung Trực là một trong những anh hùng nổi tiếng của Việt Nam trong cuộc kháng
+                                    chiến chống ách đô hộ của Pháp vào thế kỷ 19. Anh đã dũng cảm dẫn đầu một cuộc kháng
+                                    chiến biển chống lại hạm đội Pháp, đặc biệt là việc đốt cháy tàu chiến Pháp tại Vàm Nhựt
+                                    Tảo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://cdn.tgdd.vn/Files/2023/11/26/1555979/luu-ngay-5-dia-diem-du-lich-tan-tru-long-an-thu-hut-du-khach-202311262353035414.jpg"
+                                    alt="Chùa Cửu Long" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Chùa Cửu Long</div>
+                                <div class="card-text">
+                                    Chùa Cửu Long là một trong những địa danh tôn giáo và du lịch nổi tiếng tại huyện Tân
+                                    Trụ, tỉnh Long An. Dựng xây vào thế kỷ 19, chùa Cửu Long có kiến trúc truyền thống của
+                                    các ngôi chùa Việt Nam, với các đặc điểm như nóc lượn cong, cột gỗ chạm trổ, và những
+                                    bức tranh tượng trưng về đạo Phật và các vị thần trong phật giáo. Chùa là nơi tôn vinh
+                                    Đức Phật và là nơi linh thiêng để thực hành thiền định và cầu nguyện cho sự bình an và
+                                    hạnh phúc của người dân.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="http://localhost:5500/assets/images/banner-7.jpg"
+                                    alt="Khu di tích lịch sử Vàm Nhựt Tảo" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Chợ Tân Trụ</div>
+                                <div class="card-text">
+                                    Chợ Tân Trụ cung cấp một loạt các loại hàng hóa đa dạng, thu hút nhiều người mua bán từ
+                                    các vùng lân cận. Chợ Tân Trụ không chỉ là nơi mua sắm mà còn là trung tâm văn hóa và xã
+                                    hội quan trọng. Đây là nơi mà người dân có thể gặp gỡ bạn bè, trò chuyện với người dân
+                                    địa phương cũng như tìm hiểu văn hóa của người dân nơi đây. Nó cũng là điểm đến thú vị
+                                    cho du khách muốn trải nghiệm không gian chợ truyền thống và tìm hiểu về cuộc sống hàng
+                                    ngày của người dân địa phương.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://images2.thanhnien.vn/uploaded/minhnguyet/2020_09_28/du-lich1_OJZA.jpg?width=500"
+                                    alt="Hàng cau vua" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Hàng cau vua</div>
+                                <div class="card-text">
+                                    Hàng Cau Vua với hơn 30 năm tuổi với khoảng 300 cây trồng 2 bên đường, tạo ra một con
+                                    đường vô cùng nên thơ và mát mẻ. Suốt dọc đường có bố trí ghế ngồi và thùng rác, xung
+                                    quanh còn được điểm tô bởi vườn thanh long và ruộng lúa. Đây cũng là một trong những địa
+                                    điểm được du khách gần xa thích thú ghé đến khi có dịp đến Long An.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://cdn.tgdd.vn/Files/2023/11/26/1555979/luu-ngay-5-dia-diem-du-lich-tan-tru-long-an-thu-hut-du-khach-202311262356026067.jpg"
+                                    alt="Công viên Tân Trụ" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Công viên Tân Trụ</div>
+                                <div class="card-text">
+                                    Công viên Tân Trụ có không gian rộng rãi, mát mẻ và được trang trí đèn leg rất đẹp. Đây
+                                    là nơi được người dân địa phương tập trung để vui chơi, tập thể dục cũng như gặp gỡ bạn
+                                    bè. Nếu có dịp đến Tân Trụ, đừng quên ghé công viên Tân Trụ để được hòa mình vào cuộc
+                                    sống yên bình của người dân nơi đây.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://scontent.iocvnpt.com/resources/portal/Images/LAN/toanlm.lan/hinh_diem/ban_quy/z4290978683469_3bcc11f6e17007d2b86d1997d23846a5_57618699.jpg"
+                                    alt="Miễu Ông Bần Quỳ" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Miễu Ông Bần Quỳ</div>
+                                <div class="card-text">
+                                    Đây là ngôi miếu thờ ông Mai Công Hương một người có công với triều đình Nguyễn. Trong thời gian giao chiến với giặc Cao Miên để không rơi vào tay giặc ông đã cho đánh chìm tàu chở lương thực rồi nhảy xuống sông tử tiết. Tục truyền khi ông Mai Công Hương tử tiết những cây bần mọc ở ven sông đều quỳ xuống như tỏ lòng khâm phục nghĩa cử của ông. Vì vậy, ngôi miếu này còn được gọi là miễu ông Bần Quỳ.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://lh3.googleusercontent.com/p/AF1QipMocpVwZQtaHaWcnjQ_R5HrUYOjqbr30MSD9yeu=s680-w680-h510"
+                                    alt="Miếu Bà Lễ" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Miếu Bà Lễ</div>
+                                <div class="card-text">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://www.baolongan.vn/image/news/2024/20240416/images/15.jpg"
+                                    alt="Làng trống Bình An" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Làng trống Bình An</div>
+                                <div class="card-text">
+                                    Tại huyện Tân Trụ, tỉnh Long An có một làng nghề vô cùng đặc biệt, được hình thành và phát triển gần 200 năm qua, đó là làng trống Bình An, làng trống truyền thống duy nhất ở Nam Bộ.Nằm nép mình bên sông Vàm Cỏ Tây thuộc xã Bình Lãng, huyện Tân Trụ, Long An, làng trống Bình An là một trong những làng nghề truyền thống lâu đời nhất của miền Nam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://danviet.mediacdn.vn/2020/8/26/hoa-muoi-gio-1-15979037400181586550482-1598432681616-1598432681616523628522.jpg"
+                                    alt="Tuyến đường hoa" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Tuyến đường hoa</div>
+                                <div class="card-text">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="infor">
+                        <!-- <div class="logo">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </div> -->
+                        <div class="title">Cổng Thông tin chào mừng đại hội Đảng huyện Tân Trụ</div>
+                        <div class="head">
+                            <div class="name">Ủy ban Nhân dân huyện Tân Trụ</div>
+                            <div class="list">
+                                <div class="item">Địa chỉ: Khu phố Bình Hòa, thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long
+                                    An</div>
+                                <div class="item">Điện thoại: 0272 3867 494</div>
+                                <div class="item">Email: tantru@longan.gov.vn</div>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="name">Huyện ủy Tân Trụ</div>
+                            <div class="list">
+                                <div class="item">Địa chỉ: Ấp Bình Hòa, thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long An
+                                </div>
+                                <div class="item">Điện thoại: 0272 3867 130</div>
+                                <div class="item">Fax: 0272 3681 113</div>
+                                <div class="item">Email: vphutantru@longan.dcs.vn</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        
+                        <a href="/projects.html" class="menu-item">Công trình</a>
+                        <a href="/results.html" class="menu-item">Kết quả</a>
+                        <a href="/highlight.html" class="menu-item">Điểm nổi bật</a>
+                        <a href="/orientation.html" class="menu-item">Định hướng</a>
+                        <a href="/camera360.html" class="menu-item">Camera360</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="code-by">
+                        Phát triển bởi <img src="./assets/images/logo-vnpt.png" alt="VNPT LONG AN"> VNPT LONG AN
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- library -->
+<script src="./assets/library/jquery/jquery.min.js"></script>
+<script src="./assets/library/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/library/validate/jquery.validate.js"></script>
+<script src="./assets/library/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- js -->
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/map.js"></script>
+
+</html>

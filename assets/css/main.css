@@ -141,6 +141,29 @@ h1 {
 .section {
     padding-bottom: 12px;
 }
+
+.seemore {
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.seemore:hover {
+    color: var(--primary-color);
+}
+
+.seemore svg {
+    transition: all 0.3s linear;
+}
+
+.seemore:hover svg {
+    transform: translateX(6px);
+}
 /**
 * SWIPER
 **/

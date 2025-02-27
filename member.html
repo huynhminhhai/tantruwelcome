@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng Thông tin chào mừng đại hội Đảng - Danh sach ủy viên</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+    <!-- library -->
+    <link rel="stylesheet" href="./assets/library/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/library/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+
+<body id="news-detail">
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="/" class="logo">
+                    <div class="img">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                </a>
+                <nav class="navbar">
+
+                    <a href="/projects.html">Công trình</a>
+                    <a href="/results.html">Kết quả</a>
+                    <a href="/highlight.html">Điểm nổi bật</a>
+                    <a href="/orientation.html">Định hướng</a>
+                    <a href="/camera360.html">Camera 360</a>
+                </nav>
+                <div class="others">
+                    <a href="/#search" class="btn-search">
+                        <img src="./assets/images/search.svg" alt="search">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="member member-sub">
+            <div class="container">
+                <div class="search-container search-sub">
+                    <div class="search-wrap">
+                        <div class="search-input">
+                            <input type="text" id="search-destination" placeholder="Tìm kiếm ủy viên...">
+                            <img src="./assets/images/search.svg" alt="search" class="icon-search">
+                        </div>
+                    </div>
+                </div>
+                <div class="member-list">
+                    <div class="member-item">
+                        <a href="/member-detail.html">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./assets/images/Vo-Tran-Tuan-Thanh.png" alt="Võ Trần Tuấn Thanh"
+                                        class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Đc. Võ Trần Tuấn Thanh</div>
+                                    <div class="card-text">Bí thư Huyện ủy</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="member-item">
+                        <a href="/member-detail.html">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./assets/images/Trinh-Phuoc-Trung-1.png" alt="Trịnh Phước Trung"
+                                        class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Đc. Trịnh Phước Trung</div>
+                                    <div class="card-text">Phó bí thư huyện ủy</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="member-item">
+                        <a href="/member-detail.html">
+                            <div class="card">
+                                <div class="card-img">
+                                    <!-- <img src="./assets/images/avatar-1.png" alt="Phạm Văn Thái" class="card-img-top"> -->
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Đc. Phạm Văn Thái</div>
+                                    <div class="card-text">Ủy viên</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="member-item">
+                        <a href="/member-detail.html">
+                            <div class="card">
+                                <div class="card-img">
+                                    <!-- <img src="./assets/images/avatar-1.png" alt="Đặng Minh Tân" class="card-img-top"> -->
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Đc. Đặng Minh Tân</div>
+                                    <div class="card-text">Ủy viên</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="member-item">
+                        <a href="/member-detail.html">
+                            <div class="card">
+                                <div class="card-img">
+                                    <!-- <img src="./assets/images/avatar-1.png" alt="Nguyễn Thị Bích Tuyền" class="card-img-top"> -->
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Đc. Nguyễn Thị Bích Tuyền</div>
+                                    <div class="card-text">Ủy viên</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="member-item">
+                        <a href="/member-detail.html">
+                            <div class="card">
+                                <div class="card-img">
+                                    <!-- <img src="./assets/images/avatar-1.png" alt="Lê Hồng Hưng" class="card-img-top"> -->
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">Đc. Lê Hồng Hưng</div>
+                                    <div class="card-text">Ủy viên</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="infor">
+                        <!-- <div class="logo">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </div> -->
+                        <div class="title">Cổng Thông tin chào mừng đại hội Đảng huyện Tân Trụ</div>
+                        <div class="head">
+                            <div class="name">Ủy ban Nhân dân huyện Tân Trụ</div>
+                            <div class="list">
+                                <div class="item">Địa chỉ: Khu phố Bình Hòa, thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long
+                                    An</div>
+                                <div class="item">Điện thoại: 0272 3867 494</div>
+                                <div class="item">Email: tantru@longan.gov.vn</div>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="name">Huyện ủy Tân Trụ</div>
+                            <div class="list">
+                                <div class="item">Địa chỉ: Ấp Bình Hòa, thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long An
+                                </div>
+                                <div class="item">Điện thoại: 0272 3867 130</div>
+                                <div class="item">Fax: 0272 3681 113</div>
+                                <div class="item">Email: vphutantru@longan.dcs.vn</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+
+                        <a href="/projects.html" class="menu-item">Công trình</a>
+                        <a href="/results.html" class="menu-item">Kết quả</a>
+                        <a href="/highlight.html" class="menu-item">Điểm nổi bật</a>
+                        <a href="/orientation.html" class="menu-item">Định hướng</a>
+                        <a href="/camera360.html" class="menu-item">Camera360</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="code-by">
+                        Phát triển bởi <img src="./assets/images/logo-vnpt.png" alt="VNPT LONG AN"> VNPT LONG AN
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- library -->
+<script src="./assets/library/jquery/jquery.min.js"></script>
+<script src="./assets/library/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/library/validate/jquery.validate.js"></script>
+<script src="./assets/library/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- js -->
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/map.js"></script>
+
+</html>
