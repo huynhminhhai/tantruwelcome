@@ -339,12 +339,14 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 120%;
+    display: flex;
+    justify-content: center;
 }
 
 .member-list .card-img img {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .member-list .card-body {
@@ -1086,6 +1088,7 @@ th {
 }
 
 .project .project-title {
+    font-family: 'Be Vietnam Pro';
     font-size: 18px;
     font-weight: 600;
     color: var(--primary-color);
