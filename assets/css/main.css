@@ -164,6 +164,7 @@ h1 {
 .seemore:hover svg {
     transform: translateX(6px);
 }
+
 /**
 * SWIPER
 **/
@@ -189,7 +190,8 @@ h1 {
     gap: 18px;
 }
 
-.pagination .btn-next, .pagination .btn-prev {
+.pagination .btn-next,
+.pagination .btn-prev {
     border: 1px solid var(--primary-color);
     cursor: pointer;
     display: flex;
@@ -203,7 +205,8 @@ h1 {
     padding: 0;
 }
 
-.pagination .btn-next svg, .pagination .btn-prev svg {
+.pagination .btn-next svg,
+.pagination .btn-prev svg {
     flex: 1;
     width: 16px;
     height: 16px;
@@ -233,4 +236,95 @@ h1 {
 .pagination .number:hover {
     background-color: var(--primary-color);
     color: rgb(255, 255, 255);
+}
+
+/**
+* POPUP
+**/
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    content: '';
+    background: 0 0;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1004;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .1);
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.blur.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-infor {
+    max-width: 70%;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1004;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 68px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.popup-infor.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-infor .title {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primary-color);
+    line-height: 37px;
+    margin: 0px 0 12px;
+    text-align: center;
+}
+
+.popup-infor .desc {
+    width: 90%;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #5d5d5d;
+    display: block;
+    text-align: center;
+    margin: auto;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.popup-infor .desc::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.popup-infor .desc::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.popup-infor .desc::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+.popup-infor .close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    cursor: pointer;
 }

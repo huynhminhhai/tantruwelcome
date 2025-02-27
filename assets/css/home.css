@@ -332,7 +332,7 @@
 
 .member-list .card-img {
     width: 100%;
-    height: 260px;
+    height: 280px;
     background-color: #e2e0e1;
     border-radius: 0px;
     background-image: url('https://staticv2.vnptigate.vn/logo/trong-dong.png');
@@ -411,16 +411,18 @@
 .member-detail .member-wrap {
     position: relative;
     z-index: 2;
-    display: grid;
+    display: flex;
     grid-template-columns: 30% 70%;
     gap: 48px;
+    width: 80%;
+    margin-inline: auto;
 }
 
 .member-detail .member-wrap .member-img {
     background-color: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 100%;
-    max-height: 380px;
+    max-width: 350px;
+    max-height: 400px;
 }
 
 .member-detail .member-wrap .member-img img {
@@ -460,7 +462,7 @@
     background-color: var(--bg-color-2);
     margin: 0;
     width: 100%;
-    height: 260px;
+    height: 280px;
     color: var(--primary-color);
     font-size: 14px;
     display: flex;
@@ -519,6 +521,9 @@
     bottom: 0;
     background-color: rgb(54, 81, 64, 0.9);
     transform: translateY(81%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: all 0.3s linear;
 }
 
@@ -536,6 +541,11 @@
     font-size: 12px;
     line-height: 22px;
     font-weight: 400;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 6; /* number of lines to show */
+           line-clamp: 6; 
+   -webkit-box-orient: vertical;
 }
 
 .destination .destination-heading {
@@ -565,6 +575,36 @@
 .destination.destination-all {
     padding-block: 60px;
     padding-top: 0;
+}
+
+.destination .card-button {
+    flex: 1;
+    display: flex;
+    gap: 12px;
+    align-items: self-end;
+}
+
+.destination .card-button button,
+.destination .card-button a {
+    display: block;
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 3px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s linear all;
+}
+
+.destination .card-button button:hover,
+.destination .card-button a:hover {
+    background-color: var(--white-color);
+    color: #365140;
 }
 
 /**
@@ -655,6 +695,11 @@
     line-height: 22px;
     font-weight: 400;
     max-width: 450px;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 4;
+           line-clamp: 4; 
+   -webkit-box-orient: vertical;
 }
 
 .food .swiper-pagination {
@@ -670,6 +715,35 @@
 .food .food-item.swiper-slide-active {
     opacity: 1;
     scale: 1.15;
+}
+
+.food .card-button {
+    margin-top: 12px;
+    display: flex;
+    align-content: center;
+    gap: 12px;
+}
+
+.food .card-button button, .food .card-button a {
+    display: block;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--primary-color);
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    width: fit-content;
+    padding: 3px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s linear all;
+}
+
+.food .card-button button:hover, .food .card-button a:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 /**

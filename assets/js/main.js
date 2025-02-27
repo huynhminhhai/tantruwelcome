@@ -123,5 +123,45 @@ $(document).ready(function () {
         });
     }
 
+    /**
+    * POPUP
+    **/
 
+    $('.destination-item .btn-popup').on('click', function() {
+        const $popup = $(this).closest('.destination-item').find('.popup-infor');
+        $popup.addClass('active');
+        $('.blur').addClass('active');
+    });
+
+    // Khi nhấn nút đóng
+    $('.popup-infor .close').on('click', function() {
+        const $popup = $(this).closest('.popup-infor');
+        $popup.removeClass('active');
+        $('.blur').removeClass('active');
+    });
+
+    $('.food-item .btn-popup').on('click', function() {
+        const $slide = $(this).closest('.food-item');
+        const $popup = $slide.find('.popup-infor');
+        
+        $popup.data('parent-slide', $slide);
+        
+        $('body').append($popup);
+        $popup.addClass('active');
+        
+        $('.blur').addClass('active');
+    });
+
+    // Khi nhấn nút đóng
+    $('.popup-infor .close').on('click', function() {
+        const $popup = $(this).closest('.popup-infor');
+        const $slide = $popup.data('parent-slide');
+        
+        $popup.removeClass('active');
+        $('.blur').removeClass('active');
+
+        setTimeout(() => {
+            $slide.append($popup);
+        }, 300);
+    });
 });

@@ -6,13 +6,19 @@ footer {
 
 .footer-top {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: start;
+    gap: 48px;
+}
+
+.footer-top .group-menu {
+    display: flex;
+    gap: 36px;
 }
 
 .footer-top .menu {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 24px;
 }
 
@@ -21,8 +27,11 @@ footer {
     font-size: 12px;
     line-height: 1;
     letter-spacing: 0.5px;
-    text-transform: uppercase;
     transition: all 0.3s linear;
+}
+
+.footer-top .menu a:hover {
+    transform: translateX(6px);
 }
 
 .footer-bottom {
