@@ -5,6 +5,10 @@
     overflow: hidden;
 }
 
+.camera360 .section {
+    padding-bottom: 40px;
+}
+
 .camera360 .shape-1 {
     position: absolute;
     left: 50%;
@@ -37,7 +41,7 @@
 
 .camera360 .camera360-list .card-title {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 22px;
     font-weight: 600;
     color: var(--text-color);
     /* text-align: center; */

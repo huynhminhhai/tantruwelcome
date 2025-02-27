@@ -165,6 +165,13 @@ h1 {
     transform: translateX(6px);
 }
 
+.section-title-sub {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
 /**
 * SWIPER
 **/

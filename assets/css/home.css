@@ -1085,13 +1085,6 @@ th {
     padding: 80px 0 80px;
 }
 
-.section-title-sub {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-bottom: 12px;
-}
-
 .project .project-title {
     font-size: 18px;
     font-weight: 600;
