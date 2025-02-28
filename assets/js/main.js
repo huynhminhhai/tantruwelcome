@@ -1,16 +1,13 @@
 const data = [
     // Ủy viên Ban Chấp hành Đảng bộ
-    { category: "Ủy viên Đảng bộ", title: "Nguyễn Văn A", details: "Bí thư Huyện ủy Tân Trụ", link: '/member-detail.html' },
-    { category: "Ủy viên Đảng bộ", title: "Trần Thị B", details: "Phó Bí thư - Chủ tịch UBND huyện", link: '/member-detail.html' },
+    { category: "Ủy viên Đảng bộ", title: "Nguyễn Văn A", details: "Bí thư Huyện ủy Tân Trụ", link: './member-detail.html' },
+    { category: "Ủy viên Đảng bộ", title: "Trần Thị B", details: "Phó Bí thư - Chủ tịch UBND huyện", link: './member-detail.html' },
     // Tin tức, sự kiện
-    { category: "Tin tức", title: "Đại hội Đảng bộ Tân Trụ 2025", details: "Diễn ra ngày 20/2/2025", link: '/news-detail.html' },
-    { category: "Tin tức", title: "Khánh thành cầu mới", details: "Tại xã Nhựt Ninh", link: '/news-detail.html' },
+    { category: "Tin tức", title: "Đại hội Đảng bộ Tân Trụ 2025", details: "Diễn ra ngày 20/2/2025", link: './news-detail.html' },
+    { category: "Tin tức", title: "Khánh thành cầu mới", details: "Tại xã Nhựt Ninh", link: './news-detail.html' },
     // Điểm đến
-    { category: "Điểm đến", title: "Đường Cau Vua", details: "Xã Đức Tân - Đường chụp ảnh đẹp", link: '/camera360.html#cho-tan-tru' },
-    { category: "Điểm đến", title: "Vàm Nhựt Tảo", details: "Xã An Nhựt Tân - Di tích lịch sử", link: '/camera360.html#cho-tan-tru' },
-    // // Đặc sản
-    // { category: "Đặc sản", title: "Thanh long Tân Trụ", details: "Sản phẩm OCOP 3 sao" },
-    // { category: "Đặc sản", title: "Gạo Tân Trụ", details: "Gạo thơm đặc sản" }
+    { category: "Điểm đến", title: "Đường Cau Vua", details: "Xã Đức Tân - Đường chụp ảnh đẹp", link: './camera360.html#cho-tan-tru' },
+    { category: "Điểm đến", title: "Vàm Nhựt Tảo", details: "Xã An Nhựt Tân - Di tích lịch sử", link: './camera360.html#cho-tan-tru' },
 ];
 
 $(document).ready(function () {

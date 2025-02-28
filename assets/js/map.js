@@ -84,7 +84,7 @@ $(document).ready(function () {
                                     Địa chỉ: ${location.address}<br>
                                 </div>
                                 <div>
-                                    <a href="/camera360.html#${location.tag}">Xem Camera360</a>
+                                    <a href="./camera360.html#${location.tag}">Xem Camera360</a>
                                 </div>
                                 <div>
                                     <a href="${location.googleMapLink}" target="_blank">Xem trên Google Maps</a>

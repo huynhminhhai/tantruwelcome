@@ -486,6 +486,36 @@
     padding-bottom: 60px;
 }
 
+.member-button {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.member-button a {
+    display: block;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--primary-color);
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    width: fit-content;
+    padding: 6px 18px;
+    border-radius: 24px;
+    cursor: pointer;
+    text-align: center;
+    transition: .3s linear all;
+}
+
+.member-button a:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
 /**
 * DESTINATION
 **/
@@ -1450,7 +1480,7 @@ th {
     }
 
     .member-detail {
-        padding-block: 120px;
+        padding-block: 80px;
     }
 
     .member-list .card-img,
@@ -1479,8 +1509,8 @@ th {
     }
 
     .member-detail .member-wrap .member-infor .name {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .member-detail .member-wrap .member-infor .position {
@@ -1507,6 +1537,16 @@ th {
 
     .project .member-list {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .member-button {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    .member-button a {
+        width: 100%;
     }
 
     /**
@@ -1674,5 +1714,11 @@ th {
 
     .highlight .highlight-item .desc {
         font-size: 14px;
+    }
+
+    .project,
+    .highlight,
+    .result {
+        padding: 60px 0 60px;
     }
 }
