@@ -2,6 +2,10 @@
 ** BANNER
 **/
 
+.banner {
+    position: relative;
+}
+
 .banner .banner-pagi {
     position: absolute;
     bottom: 18px;
@@ -237,7 +241,7 @@
 
 #news-detail .news {
     background-color: var(--bg-color);
-    padding-top: 0;
+    padding-top: 60px;
 }
 
 .detail {
@@ -293,6 +297,10 @@
     font-weight: 300;
 }
 
+.detail .detail-content em {
+    margin-bottom: 6px !important;
+}
+
 /**
 * MEMBER
 **/
@@ -338,7 +346,7 @@
     background-image: url('https://staticv2.vnptigate.vn/logo/trong-dong.png');
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: 120%;
+    background-size: 250%;
     display: flex;
     justify-content: center;
 }
@@ -371,9 +379,9 @@
 }
 
 .member-list .card-text {
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    font-size: 12px;
+    /* font-family: "Playfair Display", serif; */
+    /* font-style: italic; */
+    font-size: 11px;
     line-height: 18px;
     font-weight: 500;
     color: var(--secondary-color);
@@ -461,7 +469,7 @@
 }
 
 .member-list .seemore {
-    background-color: var(--bg-color-2);
+    background-color: #e2e0e1;
     margin: 0;
     width: 100%;
     height: 280px;
@@ -544,10 +552,11 @@
     line-height: 22px;
     font-weight: 400;
     overflow: hidden;
-   display: -webkit-box;
-   -webkit-line-clamp: 6; /* number of lines to show */
-           line-clamp: 6; 
-   -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    /* number of lines to show */
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
 }
 
 .destination .destination-heading {
@@ -571,7 +580,7 @@
 .destination .destination-heading .desc {
     font-size: 14px;
     line-height: 26px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .destination.destination-all {
@@ -629,7 +638,7 @@
 
 .food .food-list {
     position: relative;
-    padding-top: 48px;
+    padding-top: 24px;
 }
 
 .food .food-list .swiper-wrapper {
@@ -698,10 +707,10 @@
     font-weight: 400;
     max-width: 450px;
     overflow: hidden;
-   display: -webkit-box;
-   -webkit-line-clamp: 4;
-           line-clamp: 4; 
-   -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 .food .swiper-pagination {
@@ -726,7 +735,8 @@
     gap: 12px;
 }
 
-.food .card-button button, .food .card-button a {
+.food .card-button button,
+.food .card-button a {
     display: block;
     background-color: transparent;
     font-size: 14px;
@@ -742,7 +752,8 @@
     transition: .3s linear all;
 }
 
-.food .card-button button:hover, .food .card-button a:hover {
+.food .card-button button:hover,
+.food .card-button a:hover {
     color: var(--white-color);
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -792,6 +803,19 @@
     background-color: var(--white-color);
     padding: 12px 18px;
     border-radius: 4px;
+    overflow-y: auto;
+}
+
+#location-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+#location-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#location-list::-webkit-scrollbar-thumb {
+    background: #888;
 }
 
 #location-list li {
@@ -988,6 +1012,7 @@
 .highlight .highlight-item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-color: var(--bg-color-2);
 }
 
 .highlight .highlight-item:nth-child(odd) .highlight-infor {
@@ -1041,7 +1066,6 @@
     height: 100%;
     max-width: 600px;
     padding: 60px 0;
-    background-color: var(--bg-color);
 }
 
 /**
@@ -1093,6 +1117,7 @@ th {
     font-weight: 600;
     color: var(--primary-color);
 }
+
 /* 
 .project .project-title::after {
     content: '';
@@ -1173,4 +1198,481 @@ th {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 36px 24px;
+}
+
+/**
+* 1200
+**/
+
+@media screen and (max-width: 1200px) {
+
+    .banner {
+        position: relative;
+    }
+
+    .banner .swiper-slide img {
+        height: 80vh;
+    }
+
+    .about {
+        padding-block: 80px;
+    }
+
+    /**
+    *NEWS
+    **/
+    .news .news-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news .news-list .card-img {
+        height: 220px;
+        width: 360px;
+    }
+
+    .news .news-list .news-item .card {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .news .news-list .card-body {
+        flex: 1;
+        padding-top: 0;
+    }
+
+    .news .news-list .card-title,
+    .news .news-list .card-text {
+        min-height: unset;
+    }
+
+    .detail .detail-container {
+        padding-inline: 0;
+    }
+
+    #news-detail .news {
+        padding-top: 60px;
+    }
+
+    /**
+    * DESTINATION
+    **/
+
+    .destination .destination-heading .desc {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        line-clamp: 6;
+        -webkit-box-orient: vertical;
+    }
+
+    .destination .destination-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /**
+    * HIGHLIGHT
+    **/
+
+    .highlight .highlight-item .highlight-infor {
+        padding-inline: 42px;
+    }
+
+    /**
+    * PROJECT
+    **/
+
+    .project .member-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /**
+    * MEMBER
+    **/
+
+    .member-detail .member-wrap {
+        width: 100%;
+    }
+
+    .member-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/**
+* 991px
+**/
+
+@media screen and (max-width: 991px) {
+    /**
+    * BANNER
+    **/
+
+    .banner .swiper-slide img {
+        height: 30vh;
+    }
+
+    .banner.banner-sub .swiper-slide img {
+        height: 40vh;
+    }
+
+    /**
+    * MEMBER
+    **/
+
+    .member {
+        padding-block: 80px;
+    }
+
+    .project .member-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .member-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .member-detail .member-wrap .member-img {
+        max-width: 200px;
+        max-height: 240px;
+    }
+
+    /**
+    * NEWS
+    **/
+
+    .news .news-list .card-img {
+        height: 190px;
+        width: 280px;
+    }
+
+    .news .news-list .card-btn {
+        margin-top: 12px;
+    }
+
+    /**
+    * FOOD
+    **/
+
+    .food {
+        padding-block: 80px;
+    }
+
+    .food .food-item {
+        gap: 24px;
+        padding-inline: 24px;
+    }
+
+    .food .food-item.swiper-slide-active {
+        scale: 1;
+    }
+
+    .food .food-item .food-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /**
+    * SEARCH
+    **/
+
+    .search .search-button {
+        align-items: unset;
+    }
+
+    .search .search-button .group-btn {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    /**
+    * HIGHLIGHT
+    **/
+
+    .highlight .highlight-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .highlight .highlight-item .highlight-infor {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .highlight .highlight-item:nth-child(even)> :nth-child(1) {
+        order: 1;
+    }
+
+    .highlight .highlight-item:nth-child(even)> :nth-child(2) {
+        order: 2;
+    }
+
+    .highlight .highlight-item .highlight-infor {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .highlight .highlight-item:nth-child(odd) .highlight-infor {
+        padding-left: 40px;
+    }
+
+    .highlight .highlight-item .desc {
+        font-size: 16px;
+    }
+}
+
+/**
+* 576
+**/
+
+@media screen and (max-width: 576px) {
+
+    /**
+    * BANNER
+    **/
+
+    .banner.banner-sub .swiper-slide img {
+        height: 25vh;
+    }
+
+    /**
+    * ABOUT
+    **/
+
+    .about {
+        padding-block: 60px;
+    }
+
+    /**
+    * MEMBER
+    **/
+
+    .member {
+        padding-block: 60px;
+    }
+
+    .member-detail {
+        padding-block: 120px;
+    }
+
+    .member-list .card-img,
+    .member-list .seemore {
+        height: 380px;
+    }
+
+    .member-list .card-title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 2px;
+    }
+
+    .member-list .card-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .member-detail .member-wrap .member-img {
+        max-width: 130px;
+        max-height: 180px;
+    }
+
+    .member-detail .member-wrap {
+        gap: 12px;
+    }
+
+    .member-detail .member-wrap .member-infor .name {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .member-detail .member-wrap .member-infor .position {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .member-detail .member-wrap .member-infor ul {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .member-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .search-container.search-sub {
+        margin-top: 40px;
+        margin-bottom: 24px;
+        box-shadow: unset;
+        padding-block: 0;
+        padding-inline: 0;
+    }
+
+    .project .member-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /**
+    *NEWS
+    **/
+
+    .news .news-list .news-item .card {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .news .news-list .card-img {
+        height: 200px;
+        width: 100%;
+    }
+
+    #news-detail .news {
+        padding-top: 0px;
+    }
+
+    .detail .detail-header .title {
+        font-size: 24px;
+        line-height: 34px;
+        margin-block: 6px;
+    }
+
+    .detail .detail-header .time {
+        font-size: 14px;
+    }
+
+    .detail .detail-header {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .detail .detail-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .detail {
+        padding-block: 60px;
+    }
+
+    .detail .detail-header .type {
+        font-size: 18px;
+    }
+
+    /**
+    * DESTINATION
+    **/
+
+    .destination .destination-list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .destination {
+        padding-block: 60px;
+    }
+
+    .destination .destination-heading .title {
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    .destination .destination-heading .title::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .destination .destination-heading .desc {
+        text-align: center;
+    }
+
+    /**
+    * FOOD
+    **/
+
+    .food .food-item {
+        grid-template-columns: repeat(1, 1fr);
+        padding-inline: 0;
+    }
+
+    .food .card-button {
+        margin-top: 24px;
+    }
+
+    /**
+    * MAP
+    **/
+
+    .map {
+        padding-block: 60px;
+    }
+
+    #map {
+        height: 550px;
+    }
+
+    #location-list {
+        position: relative;
+        top: unset;
+        left: unset;
+        bottom: unset;
+        margin-top: 12px;
+        border: 1px solid #ccc;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+        max-height: 200px;
+    }
+
+    /**
+    * SEARCH
+    **/
+
+    .search {
+        padding-block: 60px;
+    }
+
+    .search .search-button .group-btn {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .search .search-button {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .search-input,
+    .search .search-button {
+        width: 100%;
+    }
+
+    .search-container {
+        padding-inline: 24px;
+        padding-block: 36px;
+    }
+
+    /**
+    * PROJECT
+    **/
+
+    .project .project-content {
+        padding-left: 0px;
+    }
+
+    .highlight .highlight-item .highlight-img {
+        min-height: 220px;
+    }
+
+    .highlight .highlight-item .highlight-infor,
+    .highlight .highlight-item:nth-child(odd) .highlight-infor,
+    .highlight .highlight-item:nth-child(even) .highlight-infor {
+        padding: 24px;
+        gap: 12px;
+    }
+
+    .highlight .highlight-item .title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .highlight .highlight-item .desc {
+        font-size: 14px;
+    }
 }

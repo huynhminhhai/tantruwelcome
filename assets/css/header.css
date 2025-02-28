@@ -1,7 +1,8 @@
 header {
-    position: sticky;
+    position: fixed;
     left: 0;
     top: 0;
+    width: 100%;
     background-color: var(--white-color);
     z-index: 1002;
     box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.1);
@@ -53,6 +54,22 @@ header {
     width: 100%;
 }
 
+.header .others {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header .others .menu-mb {
+    cursor: pointer;
+    display: none;
+}
+
+.header .others .menu-mb img {
+    width: 36px;
+    height: auto;
+}
+
 .header .others .btn-search {
     display: flex;
     align-items: center;
@@ -66,4 +83,65 @@ header {
 .header .others .btn-search img {
     width: 18px;
     height: auto;
+}
+
+/**
+* 991px
+**/
+
+@media screen and (max-width: 991px) {
+
+    .header .others .menu-mb {
+        display: block;
+    }
+    
+    .header .navbar {
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        top: 76px;
+        right: calc(-45%);
+        padding: 0px 0 48px;
+        gap: 0px;
+        align-items: start;
+        height: 100vh;
+        justify-content: start;
+        border-left: 1px solid #e8e8e8;
+        transition: all 0.3s linear;
+    }
+
+    .header .navbar::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: #fff;
+    }
+
+    .header .navbar.active {
+        right: calc(-0% - 60px);
+    }
+
+    .header .navbar a {
+        width: 100%;
+        display: block;
+        padding: 18px 100px 18px 28px;
+        text-align: start;
+        font-size: 16px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+}
+
+/**
+* 576
+**/
+
+@media screen and (max-width: 576px) {
+    .header .navbar {
+        right: calc(-80%);
+    } 
 }

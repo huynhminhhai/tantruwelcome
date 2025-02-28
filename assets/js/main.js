@@ -15,6 +15,24 @@ const data = [
 
 $(document).ready(function () {
 
+    if ($('.scroll-top').length > 0) {
+        $('.scroll-top').on('click', function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 0);
+        });
+    
+        $(window).on('scroll', function() {
+            let scrollPosition = $(this).scrollTop();
+            if (scrollPosition > 200) {
+                $('.scroll-top').addClass('active');
+            } else {
+                $('.scroll-top').removeClass('active');
+            }
+        });
+    }
+
+
     new Swiper(".banner-slider", {
         loop: true,
         navigation: {
@@ -30,25 +48,38 @@ $(document).ready(function () {
         },
     });
 
-    new Swiper(".member-list", {
-        spaceBetween: 24,
-        slidesPerView: 5,
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-btn-next",
-            prevEl: ".swiper-btn-prev"
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        autoplay: {
-            delay: 8000,
-        },
-    });
+    if ($('.member-list .swiper-wrapper').length > 0) {
+        new Swiper(".member-list", {
+            spaceBetween: 24,
+            slidesPerView: 1,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-btn-next",
+                prevEl: ".swiper-btn-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 8000,
+            },
+            breakpoints: {
+                1200: {
+                    slidesPerView: 5,
+                },
+                991: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 3,
+                }
+            },
+        });
+    }
 
     new Swiper(".food-list", {
-        slidesPerView: 1.8,
+        slidesPerView: 1.3,
         centeredSlides: true,
         spaceBetween: 12,
         loop: true,
@@ -67,9 +98,12 @@ $(document).ready(function () {
             1500: {
                 slidesPerView: 1.8,
             },
-            900: {
+            991: {
                 slidesPerView: 1.5,
             },
+            768: {
+                slidesPerView: 1,
+            }
         },
     });
 
@@ -164,4 +198,10 @@ $(document).ready(function () {
             $slide.append($popup);
         }, 300);
     });
+
+    // MENU MOBILE
+
+    $('.menu-mb').click(function() {
+        $('.navbar').toggleClass('active');
+    })
 });

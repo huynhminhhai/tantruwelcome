@@ -1,6 +1,6 @@
 .camera360 {
     padding-block: 80px;
-    /* background-color: var(--bg-color-2); */
+    background-color: var(--bg-color-2);
     position: relative;
     overflow: hidden;
 }
@@ -112,4 +112,38 @@
 .camera360-item .iframe-wrap.active {
     opacity: 1;
     visibility: visible;
+}
+
+/**
+* 1200px
+**/
+
+@media screen and (max-width: 1200px) {
+    .camera360 .camera360-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/**
+* 991
+**/
+
+@media screen and (max-width: 991px) {
+    .camera360 .camera360-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .camera360 {
+        padding-block: 40px;
+    }
+}
+
+/**
+* 576ppx
+**/
+
+@media screen and (max-width: 576px) {
+    .camera360 .camera360-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
