@@ -12,14 +12,18 @@ const data = [
 
 $(document).ready(function () {
 
+    /**
+    * SCROLL TO TOP
+    **/
+
     if ($('.scroll-top').length > 0) {
-        $('.scroll-top').on('click', function() {
+        $('.scroll-top').on('click', function () {
             $('html, body').animate({
                 scrollTop: 0
             }, 0);
         });
-    
-        $(window).on('scroll', function() {
+
+        $(window).on('scroll', function () {
             let scrollPosition = $(this).scrollTop();
             if (scrollPosition > 200) {
                 $('.scroll-top').addClass('active');
@@ -108,6 +112,18 @@ $(document).ready(function () {
     * SEARCHING 
     **/
 
+    $('.btn-search').click(function () {
+        $('header .search-container').toggleClass('active');
+        $(this).toggleClass('active');
+    })
+
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.search-container, .btn-search').length) {
+            $('header .search-container').removeClass('active');
+            $('.btn-search').removeClass('active');
+        }
+    });
+
     const searchBar = document.getElementById('search-bar');
     const resultsList = document.getElementById('results');
 
@@ -143,11 +159,11 @@ $(document).ready(function () {
         searchBar.addEventListener('input', (e) => {
             displayResults(e.target.value);
         });
-    
+
         document.addEventListener('click', () => {
             $('#results').removeClass('active')
         });
-    
+
         searchBar.addEventListener('click', (event) => {
             results.classList.add('active');
             event.stopPropagation();
@@ -158,36 +174,36 @@ $(document).ready(function () {
     * POPUP
     **/
 
-    $('.destination-item .btn-popup').on('click', function() {
+    $('.destination-item .btn-popup').on('click', function () {
         const $popup = $(this).closest('.destination-item').find('.popup-infor');
         $popup.addClass('active');
         $('.blur').addClass('active');
     });
 
     // Khi nhấn nút đóng
-    $('.popup-infor .close').on('click', function() {
+    $('.popup-infor .close').on('click', function () {
         const $popup = $(this).closest('.popup-infor');
         $popup.removeClass('active');
         $('.blur').removeClass('active');
     });
 
-    $('.food-item .btn-popup').on('click', function() {
+    $('.food-item .btn-popup').on('click', function () {
         const $slide = $(this).closest('.food-item');
         const $popup = $slide.find('.popup-infor');
-        
+
         $popup.data('parent-slide', $slide);
-        
+
         $('body').append($popup);
         $popup.addClass('active');
-        
+
         $('.blur').addClass('active');
     });
 
     // Khi nhấn nút đóng
-    $('.popup-infor .close').on('click', function() {
+    $('.popup-infor .close').on('click', function () {
         const $popup = $(this).closest('.popup-infor');
         const $slide = $popup.data('parent-slide');
-        
+
         $popup.removeClass('active');
         $('.blur').removeClass('active');
 
@@ -198,7 +214,7 @@ $(document).ready(function () {
 
     // MENU MOBILE
 
-    $('.menu-mb').click(function() {
+    $('.menu-mb').click(function () {
         $('.navbar').toggleClass('active');
     })
 });

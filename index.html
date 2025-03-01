@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cổng Thông tin chào mừng đại hội Đảng</title>
-    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
 
     <!-- library -->
     <link rel="stylesheet" href="./assets/library/bootstrap/bootstrap.min.css" />
@@ -25,22 +25,54 @@
             <div class="header">
                 <a href="./index.html" class="logo">
                     <div class="img">
-                        <img src="./assets/images/logo.png" alt="Logo">
+                        <img src="./assets/images/logo.gif" alt="Logo">
                     </div>
                 </a>
                 <nav class="navbar">
-                    <a href="./projects.html">Công trình</a>
-                    <a href="./results.html">Kết quả</a>
+                    <a href="./projects.html">Công trình Đại hội XI</a>
+                    <a href="./results.html">Kết quả thực hiện</a>
                     <a href="./highlight.html">Điểm nổi bật</a>
-                    <a href="./orientation.html">Định hướng XII</a>
+                    <a href="./orientation.html">Định hướng Đại hội XII</a>
                     <a href="./camera360.html">Camera 360</a>
                 </nav>
                 <div class="others">
-                    <a href="./index.html#search" class="btn-search">
+                    <div class="btn-search">
                         <img src="./assets/images/search.svg" alt="search">
-                    </a>
+                    </div>
+                    <div class="account">
+                        <div class="btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="./assets/images/mdi--account.svg" alt="tài khoản">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="menu-mb">
                         <img src="./assets/images/ic--round-menu.svg" alt="menu mobile">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="container">
+                <div class="search-wrap">
+                    <div class="search-input">
+                        <input type="text" id="search-bar" placeholder="Tìm kiếm nhanh thông tin Tân Trụ..."
+                            fdprocessedid="4i5j0h">
+                        <img src="./assets/images/search.svg" alt="search" class="icon-search">
+                        <ul id="results"></ul>
+                    </div>
+                </div>
+                <div class="search-button">
+                    <div class="text">Tìm nhanh</div>
+                    <div class="group-btn">
+                        <a href="./news-list.html">Tin tức</a>
+                        <a href="./member.html">Ủy viên</a>
+                        <a href="./destination.html">Điểm đến</a>
+                        <a href="./index.html#food">Đặc sản</a>
                     </div>
                 </div>
             </div>
@@ -48,7 +80,7 @@
     </header>
     <main>
         <div class="blur"></div>
-        <section class="banner">
+        <!-- <section class="banner">
             <div class="banner-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -89,17 +121,44 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+        <!-- <section class="banner banner-sub">
+            <img src="https://staticv2.vnptigate.vn/logo/trong-dong.png" alt="shape-3" class="shape-3">
+            <img src="https://png.pngtree.com/png-clipart/20220125/original/pngtree-workers-peasants-and-soldiers-png-image_7215046.png" alt="shape-4" class="shape-4">
+            <div class="content">
+                <div>Chào mừng đại hội Đảng</div>
+                <div>huyện tân trụ</div>
+            </div>
+        </section> -->
+        <section class="banner banner-sub">
+            <div class="banner-bg">
+                <img src="./assets/images/banner-bg-3.jpeg" alt="banner">
+            </div>
+            <div class="content">
+                <div>Chào mừng đại hội Đảng</div>
+                <div>huyện tân trụ</div>
+            </div>
         </section>
         <section class="about">
             <div class="container">
                 <img class="shape-1" src="https://staticv2.vnptigate.vn/logo/trong-dong.png" alt="Trống đồng">
                 <h1 class="section-title">
-                    Chào mừng đến với huyện Tân Trụ
+                    Giới thiệu huyện Tân Trụ
                 </h1>
                 <div class="content">
                     <p>
-                        Huyện Tân Trụ, thuộc tỉnh Long An, là một vùng đất giàu truyền thống nằm ở phía đông nam Đồng bằng sông Cửu Long, cách TP.HCM khoảng 50 km và TP. Tân An 15 km. Kẹp giữa hai con sông Vàm Cỏ Đông và Vàm Cỏ Tây, Tân Trụ trải dài trên diện tích 108,48 km² với đất phù sa màu mỡ, khí hậu nhiệt đới thuận lợi, tạo nên nền kinh tế nông nghiệp trù phú với các đặc sản như thanh long, dưa hấu, và trà chùm ngây. Huyện có 11 đơn vị hành chính (1 thị trấn và 10 xã), dân số khoảng 60.000 người, mang đậm nét văn hóa Nam Bộ qua các làng nghề như trống Bình An và các di tích lịch sử như Vàm Nhựt Tảo, Miếu Ông Bần Quỳ. Tân Trụ không chỉ là vựa nông sản mà còn là điểm đến du lịch với tuyến đường hoa cau vua, chợ Tân Trụ hiện đại, và không gian sông nước yên bình, kết nối hài hòa giữa truyền thống và phát triển.
+                        Huyện Tân Trụ, thuộc tỉnh Long An, là một vùng đất giàu truyền thống nằm ở phía đông nam Đồng
+                        bằng sông Cửu Long, cách TP.HCM khoảng 50 km và TP. Tân An 15 km. Kẹp giữa hai con sông Vàm Cỏ
+                        Đông và Vàm Cỏ Tây, Tân Trụ trải dài trên diện tích 108,48 km² với đất phù sa màu mỡ, khí hậu
+                        nhiệt đới thuận lợi, tạo nên nền kinh tế nông nghiệp trù phú với các đặc sản như thanh long, dưa
+                        hấu, và trà chùm ngây. Huyện có 11 đơn vị hành chính (1 thị trấn và 10 xã), dân số khoảng 60.000
+                        người, mang đậm nét văn hóa Nam Bộ qua các làng nghề như trống Bình An và các di tích lịch sử
+                        như Vàm Nhựt Tảo, Miếu Ông Bần Quỳ. Tân Trụ không chỉ là vựa nông sản mà còn là điểm đến du lịch
+                        với tuyến đường hoa cau vua, chợ Tân Trụ hiện đại, và không gian sông nước yên bình, kết nối hài
+                        hòa giữa truyền thống và phát triển.
                     </p>
+                    <img src="https://file1.dangcongsan.vn/data/0/images/2023/05/12/upload_92/a3-mot-goc-do-thi-huyen-tan-tru-hom-nay.jpg"
+                        alt="Tân Trụ">
                 </div>
             </div>
         </section>
@@ -154,7 +213,8 @@
                             <a href="./member-detail.html">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="./assets/images/Nguyen-Van-De-1.png" alt="Đc. Nguyễn Văn Dễ" class="card-img-top">
+                                        <img src="./assets/images/Nguyen-Van-De-1.png" alt="Đc. Nguyễn Văn Dễ"
+                                            class="card-img-top">
                                     </div>
                                     <div class="card-body">
                                         <div class="card-title">Đc. Nguyễn Văn Dễ</div>
@@ -167,7 +227,8 @@
                             <a href="./member-detail.html">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="./assets/images/Ngo-Tan-Tai-2.png" alt="Đc. Ngô Tấn Tài" class="card-img-top">
+                                        <img src="./assets/images/Ngo-Tan-Tai-2.png" alt="Đc. Ngô Tấn Tài"
+                                            class="card-img-top">
                                     </div>
                                     <div class="card-body">
                                         <div class="card-title">Đc. Ngô Tấn Tài</div>
@@ -187,6 +248,7 @@
             </div>
         </section>
         <section class="news">
+            <img class="shape-1" src="./assets/images/shape-1.png" alt="trống đồng">
             <div class="container">
                 <h2 class="section-title">Tin tức - Sự kiện</h2>
                 <div class="news-list">
@@ -319,18 +381,30 @@
                             </div>
                             <div class="title">Khu di tích lịch sử Vàm Nhựt Tảo</div>
                             <div class="desc">
-                                Khu di tích lịch sử Vàm Nhựt Tảo tại xã Tân Bình, huyện Tân Trụ, tỉnh Long An, là nơi ghi dấu chiến công Hỏa hồng Nhựt Tảo ngày 10/12/1861, khi anh hùng Nguyễn Trung Trực cùng nghĩa quân đốt cháy tàu chiến Pháp L’Espérance, khẳng định tinh thần yêu nước bất khuất. Được xếp hạng Di tích Quốc gia năm 1996, khu vực rộng 6,1 ha này bao gồm đền thờ, nhà văn bia, công viên và mô hình chiến hạm, thu hút du khách bởi giá trị lịch sử và không gian sông nước yên bình. Đây không chỉ là điểm tưởng niệm mà còn là biểu tượng tự hào dân tộc trên tuyến du lịch Long An.
+                                Khu di tích lịch sử Vàm Nhựt Tảo tại xã Tân Bình, huyện Tân Trụ, tỉnh Long An, là nơi
+                                ghi dấu chiến công Hỏa hồng Nhựt Tảo ngày 10/12/1861, khi anh hùng Nguyễn Trung Trực
+                                cùng nghĩa quân đốt cháy tàu chiến Pháp L’Espérance, khẳng định tinh thần yêu nước bất
+                                khuất. Được xếp hạng Di tích Quốc gia năm 1996, khu vực rộng 6,1 ha này bao gồm đền thờ,
+                                nhà văn bia, công viên và mô hình chiến hạm, thu hút du khách bởi giá trị lịch sử và
+                                không gian sông nước yên bình. Đây không chỉ là điểm tưởng niệm mà còn là biểu tượng tự
+                                hào dân tộc trên tuyến du lịch Long An.
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-img">
-                                <img src="./assets/images/vam-nhut-tao.jpg"
-                                    alt="Khu di tích lịch sử Vàm Nhựt Tảo" class="card-img-top">
+                                <img src="./assets/images/vam-nhut-tao.jpg" alt="Khu di tích lịch sử Vàm Nhựt Tảo"
+                                    class="card-img-top">
                             </div>
                             <div class="card-body">
                                 <div class="card-title">Khu di tích lịch sử Vàm Nhựt Tảo</div>
                                 <div class="card-text">
-                                    Khu di tích lịch sử Vàm Nhựt Tảo tại xã Tân Bình, huyện Tân Trụ, tỉnh Long An, là nơi ghi dấu chiến công Hỏa hồng Nhựt Tảo ngày 10/12/1861, khi anh hùng Nguyễn Trung Trực cùng nghĩa quân đốt cháy tàu chiến Pháp L’Espérance, khẳng định tinh thần yêu nước bất khuất. Được xếp hạng Di tích Quốc gia năm 1996, khu vực rộng 6,1 ha này bao gồm đền thờ, nhà văn bia, công viên và mô hình chiến hạm, thu hút du khách bởi giá trị lịch sử và không gian sông nước yên bình. Đây không chỉ là điểm tưởng niệm mà còn là biểu tượng tự hào dân tộc trên tuyến du lịch Long An.
+                                    Khu di tích lịch sử Vàm Nhựt Tảo tại xã Tân Bình, huyện Tân Trụ, tỉnh Long An, là
+                                    nơi ghi dấu chiến công Hỏa hồng Nhựt Tảo ngày 10/12/1861, khi anh hùng Nguyễn Trung
+                                    Trực cùng nghĩa quân đốt cháy tàu chiến Pháp L’Espérance, khẳng định tinh thần yêu
+                                    nước bất khuất. Được xếp hạng Di tích Quốc gia năm 1996, khu vực rộng 6,1 ha này bao
+                                    gồm đền thờ, nhà văn bia, công viên và mô hình chiến hạm, thu hút du khách bởi giá
+                                    trị lịch sử và không gian sông nước yên bình. Đây không chỉ là điểm tưởng niệm mà
+                                    còn là biểu tượng tự hào dân tộc trên tuyến du lịch Long An.
                                 </div>
                                 <div class="card-button">
                                     <button class="btn-popup">Tìm hiểu thêm</button>
@@ -346,7 +420,14 @@
                             </div>
                             <div class="title">Tuyến đường hoa</div>
                             <div class="desc">
-                                Tuyến đường hoa Tân Trụ (hay Hàng cau vua Tân Trụ) nằm trên tuyến đường Ông Đồ Nghị, thuộc xã Đức Tân, huyện Tân Trụ, tỉnh Long An, cách TP. Tân An khoảng 15 km và TP.HCM khoảng 50 km. Con đường dài khoảng 2 km này nổi bật với hơn 300 cây cau vua cao trên 10 m, trồng thẳng tắp hai bên, tạo bóng mát rợp trời và khung cảnh thanh bình giữa đồng lúa xanh mướt. Điểm nhấn là những khóm hoa mười giờ rực rỡ dưới gốc cau, mang lại vẻ đẹp mộc mạc, thơ mộng của miền quê Nam Bộ. Từ một con đường đất đơn sơ, sau khi được bê tông hóa và trồng cau cách đây khoảng 15 năm, nơi đây trở thành điểm check-in yêu thích, thu hút du khách vào cuối tuần để chụp ảnh và tận hưởng không gian yên ả.
+                                Tuyến đường hoa Tân Trụ (hay Hàng cau vua Tân Trụ) nằm trên tuyến đường Ông Đồ Nghị,
+                                thuộc xã Đức Tân, huyện Tân Trụ, tỉnh Long An, cách TP. Tân An khoảng 15 km và TP.HCM
+                                khoảng 50 km. Con đường dài khoảng 2 km này nổi bật với hơn 300 cây cau vua cao trên 10
+                                m, trồng thẳng tắp hai bên, tạo bóng mát rợp trời và khung cảnh thanh bình giữa đồng lúa
+                                xanh mướt. Điểm nhấn là những khóm hoa mười giờ rực rỡ dưới gốc cau, mang lại vẻ đẹp mộc
+                                mạc, thơ mộng của miền quê Nam Bộ. Từ một con đường đất đơn sơ, sau khi được bê tông hóa
+                                và trồng cau cách đây khoảng 15 năm, nơi đây trở thành điểm check-in yêu thích, thu hút
+                                du khách vào cuối tuần để chụp ảnh và tận hưởng không gian yên ả.
                             </div>
                         </div>
                         <div class="card">
@@ -357,7 +438,15 @@
                             <div class="card-body">
                                 <div class="card-title">Tuyến đường hoa</div>
                                 <div class="card-text">
-                                    Tuyến đường hoa Tân Trụ (hay Hàng cau vua Tân Trụ) nằm trên tuyến đường Ông Đồ Nghị, thuộc xã Đức Tân, huyện Tân Trụ, tỉnh Long An, cách TP. Tân An khoảng 15 km và TP.HCM khoảng 50 km. Con đường dài khoảng 2 km này nổi bật với hơn 300 cây cau vua cao trên 10 m, trồng thẳng tắp hai bên, tạo bóng mát rợp trời và khung cảnh thanh bình giữa đồng lúa xanh mướt. Điểm nhấn là những khóm hoa mười giờ rực rỡ dưới gốc cau, mang lại vẻ đẹp mộc mạc, thơ mộng của miền quê Nam Bộ. Từ một con đường đất đơn sơ, sau khi được bê tông hóa và trồng cau cách đây khoảng 15 năm, nơi đây trở thành điểm check-in yêu thích, thu hút du khách vào cuối tuần để chụp ảnh và tận hưởng không gian yên ả.
+                                    Tuyến đường hoa Tân Trụ (hay Hàng cau vua Tân Trụ) nằm trên tuyến đường Ông Đồ Nghị,
+                                    thuộc xã Đức Tân, huyện Tân Trụ, tỉnh Long An, cách TP. Tân An khoảng 15 km và
+                                    TP.HCM khoảng 50 km. Con đường dài khoảng 2 km này nổi bật với hơn 300 cây cau vua
+                                    cao trên 10 m, trồng thẳng tắp hai bên, tạo bóng mát rợp trời và khung cảnh thanh
+                                    bình giữa đồng lúa xanh mướt. Điểm nhấn là những khóm hoa mười giờ rực rỡ dưới gốc
+                                    cau, mang lại vẻ đẹp mộc mạc, thơ mộng của miền quê Nam Bộ. Từ một con đường đất đơn
+                                    sơ, sau khi được bê tông hóa và trồng cau cách đây khoảng 15 năm, nơi đây trở thành
+                                    điểm check-in yêu thích, thu hút du khách vào cuối tuần để chụp ảnh và tận hưởng
+                                    không gian yên ả.
                                 </div>
                                 <div class="card-button">
                                     <button class="btn-popup">Tìm hiểu thêm</button>
@@ -373,18 +462,36 @@
                             </div>
                             <div class="title">Chợ Tân Trụ</div>
                             <div class="desc">
-                                Chợ Tân Trụ là một khu chợ truyền thống nổi bật tại thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long An, nằm giữa vùng châu thổ Đồng bằng sông Cửu Long, kẹp giữa hai con sông Vàm Cỏ Đông và Vàm Cỏ Tây. Chợ được khai trương vào ngày 5/9/2020 dưới dạng Trung tâm Thương mại Chợ Tân Trụ, do Công ty Cổ phần Địa ốc Thắng Lợi đầu tư, với diện tích 4.000 m², gồm 82 ki-ốt và 84 sạp, chia thành các phân khu ngành hàng như thực phẩm, rau củ, trái cây, và hàng tiêu dùng. Nơi đây không chỉ là trung tâm mua sắm sầm uất phục vụ người dân địa phương mà còn là điểm giao thương quan trọng nhờ vị trí gần thành phố Tân An (khoảng 15 km) và kết nối thuận tiện với TP.HCM. Với hệ thống điện, nước, phòng cháy chữa cháy hiện đại, chợ Tân Trụ mang đến không gian mua bán an toàn, sạch sẽ, đồng thời giữ nét văn hóa đặc trưng của chợ Nam Bộ.
+                                Chợ Tân Trụ là một khu chợ truyền thống nổi bật tại thị trấn Tân Trụ, huyện Tân Trụ,
+                                tỉnh Long An, nằm giữa vùng châu thổ Đồng bằng sông Cửu Long, kẹp giữa hai con sông Vàm
+                                Cỏ Đông và Vàm Cỏ Tây. Chợ được khai trương vào ngày 5/9/2020 dưới dạng Trung tâm Thương
+                                mại Chợ Tân Trụ, do Công ty Cổ phần Địa ốc Thắng Lợi đầu tư, với diện tích 4.000 m², gồm
+                                82 ki-ốt và 84 sạp, chia thành các phân khu ngành hàng như thực phẩm, rau củ, trái cây,
+                                và hàng tiêu dùng. Nơi đây không chỉ là trung tâm mua sắm sầm uất phục vụ người dân địa
+                                phương mà còn là điểm giao thương quan trọng nhờ vị trí gần thành phố Tân An (khoảng 15
+                                km) và kết nối thuận tiện với TP.HCM. Với hệ thống điện, nước, phòng cháy chữa cháy hiện
+                                đại, chợ Tân Trụ mang đến không gian mua bán an toàn, sạch sẽ, đồng thời giữ nét văn hóa
+                                đặc trưng của chợ Nam Bộ.
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-img">
-                                <img src="./assets/images/banner-7.jpg"
-                                    alt="Khu di tích lịch sử Vàm Nhựt Tảo" class="card-img-top">
+                                <img src="./assets/images/banner-7.jpg" alt="Khu di tích lịch sử Vàm Nhựt Tảo"
+                                    class="card-img-top">
                             </div>
                             <div class="card-body">
                                 <div class="card-title">Chợ Tân Trụ</div>
                                 <div class="card-text">
-                                    Chợ Tân Trụ là một khu chợ truyền thống nổi bật tại thị trấn Tân Trụ, huyện Tân Trụ, tỉnh Long An, nằm giữa vùng châu thổ Đồng bằng sông Cửu Long, kẹp giữa hai con sông Vàm Cỏ Đông và Vàm Cỏ Tây. Chợ được khai trương vào ngày 5/9/2020 dưới dạng Trung tâm Thương mại Chợ Tân Trụ, do Công ty Cổ phần Địa ốc Thắng Lợi đầu tư, với diện tích 4.000 m², gồm 82 ki-ốt và 84 sạp, chia thành các phân khu ngành hàng như thực phẩm, rau củ, trái cây, và hàng tiêu dùng. Nơi đây không chỉ là trung tâm mua sắm sầm uất phục vụ người dân địa phương mà còn là điểm giao thương quan trọng nhờ vị trí gần thành phố Tân An (khoảng 15 km) và kết nối thuận tiện với TP.HCM. Với hệ thống điện, nước, phòng cháy chữa cháy hiện đại, chợ Tân Trụ mang đến không gian mua bán an toàn, sạch sẽ, đồng thời giữ nét văn hóa đặc trưng của chợ Nam Bộ.
+                                    Chợ Tân Trụ là một khu chợ truyền thống nổi bật tại thị trấn Tân Trụ, huyện Tân Trụ,
+                                    tỉnh Long An, nằm giữa vùng châu thổ Đồng bằng sông Cửu Long, kẹp giữa hai con sông
+                                    Vàm Cỏ Đông và Vàm Cỏ Tây. Chợ được khai trương vào ngày 5/9/2020 dưới dạng Trung
+                                    tâm Thương mại Chợ Tân Trụ, do Công ty Cổ phần Địa ốc Thắng Lợi đầu tư, với diện
+                                    tích 4.000 m², gồm 82 ki-ốt và 84 sạp, chia thành các phân khu ngành hàng như thực
+                                    phẩm, rau củ, trái cây, và hàng tiêu dùng. Nơi đây không chỉ là trung tâm mua sắm
+                                    sầm uất phục vụ người dân địa phương mà còn là điểm giao thương quan trọng nhờ vị
+                                    trí gần thành phố Tân An (khoảng 15 km) và kết nối thuận tiện với TP.HCM. Với hệ
+                                    thống điện, nước, phòng cháy chữa cháy hiện đại, chợ Tân Trụ mang đến không gian mua
+                                    bán an toàn, sạch sẽ, đồng thời giữ nét văn hóa đặc trưng của chợ Nam Bộ.
                                 </div>
                                 <div class="card-button">
                                     <button class="btn-popup">Tìm hiểu thêm</button>
@@ -400,7 +507,14 @@
                             </div>
                             <div class="title">Hàng cau vua</div>
                             <div class="desc">
-                                Hàng cau vua Tân Trụ là một con đường nổi tiếng tại huyện Tân Trụ, tỉnh Long An, cách TP.HCM khoảng 50 km về phía nam. Nằm trên tuyến đường Ông Đồ Nghị, thuộc xã Đức Tân, con đường dài khoảng 2 km này được trồng khoảng 300 cây cau vua thẳng tắp hai bên, tạo nên khung cảnh rợp bóng mát và yên bình giữa cánh đồng lúa xanh mướt. Những cây cau vua cao trên 10 m, tuổi đời khoảng 15 năm, kết hợp với hoa mười giờ trồng dưới gốc, mang đến vẻ đẹp mộc mạc, thanh lịch của miền quê Nam Bộ. Ban đầu chỉ là đường đất, sau được bê tông hóa và trồng cau, nơi đây giờ trở thành điểm check-in yêu thích của du khách, đặc biệt vào cuối tuần, để tận hưởng không khí trong lành và chụp ảnh lưu niệm.
+                                Hàng cau vua Tân Trụ là một con đường nổi tiếng tại huyện Tân Trụ, tỉnh Long An, cách
+                                TP.HCM khoảng 50 km về phía nam. Nằm trên tuyến đường Ông Đồ Nghị, thuộc xã Đức Tân, con
+                                đường dài khoảng 2 km này được trồng khoảng 300 cây cau vua thẳng tắp hai bên, tạo nên
+                                khung cảnh rợp bóng mát và yên bình giữa cánh đồng lúa xanh mướt. Những cây cau vua cao
+                                trên 10 m, tuổi đời khoảng 15 năm, kết hợp với hoa mười giờ trồng dưới gốc, mang đến vẻ
+                                đẹp mộc mạc, thanh lịch của miền quê Nam Bộ. Ban đầu chỉ là đường đất, sau được bê tông
+                                hóa và trồng cau, nơi đây giờ trở thành điểm check-in yêu thích của du khách, đặc biệt
+                                vào cuối tuần, để tận hưởng không khí trong lành và chụp ảnh lưu niệm.
                             </div>
                         </div>
                         <div class="card">
@@ -411,7 +525,15 @@
                             <div class="card-body">
                                 <div class="card-title">Hàng cau vua</div>
                                 <div class="card-text">
-                                    Hàng cau vua Tân Trụ là một con đường nổi tiếng tại huyện Tân Trụ, tỉnh Long An, cách TP.HCM khoảng 50 km về phía nam. Nằm trên tuyến đường Ông Đồ Nghị, thuộc xã Đức Tân, con đường dài khoảng 2 km này được trồng khoảng 300 cây cau vua thẳng tắp hai bên, tạo nên khung cảnh rợp bóng mát và yên bình giữa cánh đồng lúa xanh mướt. Những cây cau vua cao trên 10 m, tuổi đời khoảng 15 năm, kết hợp với hoa mười giờ trồng dưới gốc, mang đến vẻ đẹp mộc mạc, thanh lịch của miền quê Nam Bộ. Ban đầu chỉ là đường đất, sau được bê tông hóa và trồng cau, nơi đây giờ trở thành điểm check-in yêu thích của du khách, đặc biệt vào cuối tuần, để tận hưởng không khí trong lành và chụp ảnh lưu niệm.
+                                    Hàng cau vua Tân Trụ là một con đường nổi tiếng tại huyện Tân Trụ, tỉnh Long An,
+                                    cách TP.HCM khoảng 50 km về phía nam. Nằm trên tuyến đường Ông Đồ Nghị, thuộc xã Đức
+                                    Tân, con đường dài khoảng 2 km này được trồng khoảng 300 cây cau vua thẳng tắp hai
+                                    bên, tạo nên khung cảnh rợp bóng mát và yên bình giữa cánh đồng lúa xanh mướt. Những
+                                    cây cau vua cao trên 10 m, tuổi đời khoảng 15 năm, kết hợp với hoa mười giờ trồng
+                                    dưới gốc, mang đến vẻ đẹp mộc mạc, thanh lịch của miền quê Nam Bộ. Ban đầu chỉ là
+                                    đường đất, sau được bê tông hóa và trồng cau, nơi đây giờ trở thành điểm check-in
+                                    yêu thích của du khách, đặc biệt vào cuối tuần, để tận hưởng không khí trong lành và
+                                    chụp ảnh lưu niệm.
                                 </div>
                                 <div class="card-button">
                                     <button class="btn-popup">Tìm hiểu thêm</button>
@@ -427,7 +549,14 @@
                             </div>
                             <div class="title">Làng trống Bình An</div>
                             <div class="desc">
-                                Làng trống Bình An nằm ở xã Bình Lãng, huyện Tân Trụ, tỉnh Long An, là một làng nghề truyền thống nổi tiếng hơn 170 năm, được xem là "độc nhất" ở Nam Bộ với tiếng trống vang vọng, trầm bổng. Ra đời từ thời ông Nguyễn Văn Ty – người học nghề từ Rạch Gầm, Tiền Giang và truyền lại cho con cháu – làng trống sử dụng gỗ sao, mít và da trâu già qua hơn 20 công đoạn thủ công tỉ mỉ như ghép thùng, căng da bằng giàn trò, và đóng đinh tre. Sản phẩm đa dạng từ trống lân, trống chùa đến trống trường học, nổi bật nhờ âm thanh giòn, bền, từng vang xa đến Mỹ, Úc. Dù đối mặt với cạnh tranh từ trống nhập khẩu, làng vẫn giữ hồn nghề bên dòng sông Vàm Cỏ Tây, trở thành niềm tự hào văn hóa của Long An.
+                                Làng trống Bình An nằm ở xã Bình Lãng, huyện Tân Trụ, tỉnh Long An, là một làng nghề
+                                truyền thống nổi tiếng hơn 170 năm, được xem là "độc nhất" ở Nam Bộ với tiếng trống vang
+                                vọng, trầm bổng. Ra đời từ thời ông Nguyễn Văn Ty – người học nghề từ Rạch Gầm, Tiền
+                                Giang và truyền lại cho con cháu – làng trống sử dụng gỗ sao, mít và da trâu già qua hơn
+                                20 công đoạn thủ công tỉ mỉ như ghép thùng, căng da bằng giàn trò, và đóng đinh tre. Sản
+                                phẩm đa dạng từ trống lân, trống chùa đến trống trường học, nổi bật nhờ âm thanh giòn,
+                                bền, từng vang xa đến Mỹ, Úc. Dù đối mặt với cạnh tranh từ trống nhập khẩu, làng vẫn giữ
+                                hồn nghề bên dòng sông Vàm Cỏ Tây, trở thành niềm tự hào văn hóa của Long An.
                             </div>
                         </div>
                         <div class="card">
@@ -438,7 +567,15 @@
                             <div class="card-body">
                                 <div class="card-title">Làng trống Bình An</div>
                                 <div class="card-text">
-                                    Làng trống Bình An nằm ở xã Bình Lãng, huyện Tân Trụ, tỉnh Long An, là một làng nghề truyền thống nổi tiếng hơn 170 năm, được xem là "độc nhất" ở Nam Bộ với tiếng trống vang vọng, trầm bổng. Ra đời từ thời ông Nguyễn Văn Ty – người học nghề từ Rạch Gầm, Tiền Giang và truyền lại cho con cháu – làng trống sử dụng gỗ sao, mít và da trâu già qua hơn 20 công đoạn thủ công tỉ mỉ như ghép thùng, căng da bằng giàn trò, và đóng đinh tre. Sản phẩm đa dạng từ trống lân, trống chùa đến trống trường học, nổi bật nhờ âm thanh giòn, bền, từng vang xa đến Mỹ, Úc. Dù đối mặt với cạnh tranh từ trống nhập khẩu, làng vẫn giữ hồn nghề bên dòng sông Vàm Cỏ Tây, trở thành niềm tự hào văn hóa của Long An.
+                                    Làng trống Bình An nằm ở xã Bình Lãng, huyện Tân Trụ, tỉnh Long An, là một làng nghề
+                                    truyền thống nổi tiếng hơn 170 năm, được xem là "độc nhất" ở Nam Bộ với tiếng trống
+                                    vang vọng, trầm bổng. Ra đời từ thời ông Nguyễn Văn Ty – người học nghề từ Rạch Gầm,
+                                    Tiền Giang và truyền lại cho con cháu – làng trống sử dụng gỗ sao, mít và da trâu
+                                    già qua hơn 20 công đoạn thủ công tỉ mỉ như ghép thùng, căng da bằng giàn trò, và
+                                    đóng đinh tre. Sản phẩm đa dạng từ trống lân, trống chùa đến trống trường học, nổi
+                                    bật nhờ âm thanh giòn, bền, từng vang xa đến Mỹ, Úc. Dù đối mặt với cạnh tranh từ
+                                    trống nhập khẩu, làng vẫn giữ hồn nghề bên dòng sông Vàm Cỏ Tây, trở thành niềm tự
+                                    hào văn hóa của Long An.
                                 </div>
                                 <div class="card-button">
                                     <button class="btn-popup">Tìm hiểu thêm</button>
@@ -469,9 +606,22 @@
                             </div>
                             <div class="title">Trà chùm ngây Vườn Nhà Mình</div>
                             <div class="desc">
-                                Trà Chùm Ngây Vườn Nhà Mình là một sản phẩm trà thảo mộc tự nhiên, được chế biến từ lá chùm ngây (Moringa oleifera) – loại cây nổi tiếng với giá trị dinh dưỡng cao, kết hợp cùng lá đinh lăng và cỏ ngọt theo tỷ lệ cân đối (88% chùm ngây, 10% đinh lăng, 2% cỏ ngọt). Sản phẩm đạt chuẩn OCOP 4 sao, khẳng định chất lượng vượt trội và nguồn gốc an toàn từ vùng nguyên liệu do Vườn Nhà Mình trực tiếp trồng và quản lý tại Long An.
-                                Trà được sản xuất theo phương pháp tự nhiên, không sử dụng phân bón hóa học hay chất bảo quản, giữ nguyên hương vị đặc trưng và tinh chất quý giá của chùm ngây. Lá chùm ngây sau khi thu hoạch được rửa sạch bằng nước khử trùng, sấy ở nhiệt độ thấp để bảo toàn hơn 90 chất dinh dưỡng, bao gồm vitamin C (gấp 7 lần cam), vitamin A, canxi, cùng 46 chất chống oxy hóa như flavonoid và phenolic. Kỹ thuật sao trà thủ công đặc biệt giúp trà dễ ngấm trong nước nóng (3-5 phút), mang đến hương thơm nhẹ nhàng, màu vàng đẹp mắt, vị ngọt thanh tự nhiên, không đắng chát như trà xanh.
-                                Trà Chùm Ngây Vườn Nhà Mình được đóng gói cẩn thận trong túi bạc hoặc hộp giấy kraft thân thiện với môi trường, bảo quản nơi khô ráo, thoáng mát, giữ chất lượng tối ưu trong 6-12 tháng. Đây là lựa chọn lý tưởng cho những ai muốn chăm sóc sức khỏe một cách tự nhiên, an toàn và bền vững.
+                                Trà Chùm Ngây Vườn Nhà Mình là một sản phẩm trà thảo mộc tự nhiên, được chế biến từ lá
+                                chùm ngây (Moringa oleifera) – loại cây nổi tiếng với giá trị dinh dưỡng cao, kết hợp
+                                cùng lá đinh lăng và cỏ ngọt theo tỷ lệ cân đối (88% chùm ngây, 10% đinh lăng, 2% cỏ
+                                ngọt). Sản phẩm đạt chuẩn OCOP 4 sao, khẳng định chất lượng vượt trội và nguồn gốc an
+                                toàn từ vùng nguyên liệu do Vườn Nhà Mình trực tiếp trồng và quản lý tại Long An.
+                                Trà được sản xuất theo phương pháp tự nhiên, không sử dụng phân bón hóa học hay chất bảo
+                                quản, giữ nguyên hương vị đặc trưng và tinh chất quý giá của chùm ngây. Lá chùm ngây sau
+                                khi thu hoạch được rửa sạch bằng nước khử trùng, sấy ở nhiệt độ thấp để bảo toàn hơn 90
+                                chất dinh dưỡng, bao gồm vitamin C (gấp 7 lần cam), vitamin A, canxi, cùng 46 chất chống
+                                oxy hóa như flavonoid và phenolic. Kỹ thuật sao trà thủ công đặc biệt giúp trà dễ ngấm
+                                trong nước nóng (3-5 phút), mang đến hương thơm nhẹ nhàng, màu vàng đẹp mắt, vị ngọt
+                                thanh tự nhiên, không đắng chát như trà xanh.
+                                Trà Chùm Ngây Vườn Nhà Mình được đóng gói cẩn thận trong túi bạc hoặc hộp giấy kraft
+                                thân thiện với môi trường, bảo quản nơi khô ráo, thoáng mát, giữ chất lượng tối ưu trong
+                                6-12 tháng. Đây là lựa chọn lý tưởng cho những ai muốn chăm sóc sức khỏe một cách tự
+                                nhiên, an toàn và bền vững.
                             </div>
                         </div>
                         <div class="food-img">
@@ -482,7 +632,11 @@
                             <div class="category">OCOP</div>
                             <h3 class="name">Trà chùm ngây Vườn Nhà Mình</h3>
                             <div class="desc">
-                                Trà Chùm Ngây Vườn Nhà Mình là một sản phẩm trà thảo mộc tự nhiên, được chế biến từ lá chùm ngây (Moringa oleifera) – loại cây nổi tiếng với giá trị dinh dưỡng cao, kết hợp cùng lá đinh lăng và cỏ ngọt theo tỷ lệ cân đối (88% chùm ngây, 10% đinh lăng, 2% cỏ ngọt). Sản phẩm đạt chuẩn OCOP 4 sao, khẳng định chất lượng vượt trội và nguồn gốc an toàn từ vùng nguyên liệu do Vườn Nhà Mình trực tiếp trồng và quản lý tại Long An.
+                                Trà Chùm Ngây Vườn Nhà Mình là một sản phẩm trà thảo mộc tự nhiên, được chế biến từ lá
+                                chùm ngây (Moringa oleifera) – loại cây nổi tiếng với giá trị dinh dưỡng cao, kết hợp
+                                cùng lá đinh lăng và cỏ ngọt theo tỷ lệ cân đối (88% chùm ngây, 10% đinh lăng, 2% cỏ
+                                ngọt). Sản phẩm đạt chuẩn OCOP 4 sao, khẳng định chất lượng vượt trội và nguồn gốc an
+                                toàn từ vùng nguyên liệu do Vườn Nhà Mình trực tiếp trồng và quản lý tại Long An.
                             </div>
                             <div class="card-button">
                                 <button class="btn-popup">Tìm hiểu thêm</button>
@@ -496,8 +650,16 @@
                             </div>
                             <div class="title">Trống lân Bình An</div>
                             <div class="desc">
-                                Trống lân Bình An là sản phẩm thủ công truyền thống từ làng nghề Bình An, xã Bình Lãng, huyện Tân Trụ, tỉnh Long An, nơi có lịch sử làm trống hơn 170 năm, bắt nguồn từ thời ông Nguyễn Văn Ty vào cuối thế kỷ 19. Đây là loại trống chuyên dụng cho các đoàn múa lân, nổi tiếng với âm thanh vang, trầm bổng và độ bền cao, được chế tác từ những nguyên liệu chọn lọc kỹ càng.
-                                Trống lân Bình An không chỉ là nhạc cụ mà còn mang giá trị văn hóa sâu sắc, gắn liền với các hoạt động lễ hội truyền thống như múa lân, sư, rồng, góp phần tạo nên không khí rộn ràng, vui tươi. Hiện nay, dù cạnh tranh với trống nhập khẩu từ Trung Quốc, làng nghề vẫn duy trì nhờ sự tâm huyết của các nghệ nhân, phục vụ từ đoàn lân địa phương đến các tỉnh thành Nam Bộ.
+                                Trống lân Bình An là sản phẩm thủ công truyền thống từ làng nghề Bình An, xã Bình Lãng,
+                                huyện Tân Trụ, tỉnh Long An, nơi có lịch sử làm trống hơn 170 năm, bắt nguồn từ thời ông
+                                Nguyễn Văn Ty vào cuối thế kỷ 19. Đây là loại trống chuyên dụng cho các đoàn múa lân,
+                                nổi tiếng với âm thanh vang, trầm bổng và độ bền cao, được chế tác từ những nguyên liệu
+                                chọn lọc kỹ càng.
+                                Trống lân Bình An không chỉ là nhạc cụ mà còn mang giá trị văn hóa sâu sắc, gắn liền với
+                                các hoạt động lễ hội truyền thống như múa lân, sư, rồng, góp phần tạo nên không khí rộn
+                                ràng, vui tươi. Hiện nay, dù cạnh tranh với trống nhập khẩu từ Trung Quốc, làng nghề vẫn
+                                duy trì nhờ sự tâm huyết của các nghệ nhân, phục vụ từ đoàn lân địa phương đến các tỉnh
+                                thành Nam Bộ.
                             </div>
                         </div>
                         <div class="food-img">
@@ -508,7 +670,11 @@
                             <div class="category">OCOP</div>
                             <h3 class="name">Trống lân Bình An</h3>
                             <div class="desc">
-                                Trống lân Bình An là sản phẩm thủ công truyền thống từ làng nghề Bình An, xã Bình Lãng, huyện Tân Trụ, tỉnh Long An, nơi có lịch sử làm trống hơn 170 năm, bắt nguồn từ thời ông Nguyễn Văn Ty vào cuối thế kỷ 19. Đây là loại trống chuyên dụng cho các đoàn múa lân, nổi tiếng với âm thanh vang, trầm bổng và độ bền cao, được chế tác từ những nguyên liệu chọn lọc kỹ càng.
+                                Trống lân Bình An là sản phẩm thủ công truyền thống từ làng nghề Bình An, xã Bình Lãng,
+                                huyện Tân Trụ, tỉnh Long An, nơi có lịch sử làm trống hơn 170 năm, bắt nguồn từ thời ông
+                                Nguyễn Văn Ty vào cuối thế kỷ 19. Đây là loại trống chuyên dụng cho các đoàn múa lân,
+                                nổi tiếng với âm thanh vang, trầm bổng và độ bền cao, được chế tác từ những nguyên liệu
+                                chọn lọc kỹ càng.
                             </div>
                             <div class="card-button">
                                 <button class="btn-popup">Tìm hiểu thêm</button>
@@ -522,7 +688,11 @@
                             </div>
                             <div class="title">Thanh long Tân Trụ</div>
                             <div class="desc">
-                                Thanh long Tân Trụ là loại thanh long đặc sản được trồng chủ yếu tại huyện Tân Trụ, tỉnh Long An – một vùng đất thuộc Đồng bằng sông Cửu Long, nổi tiếng với điều kiện thổ nhưỡng và khí hậu thuận lợi cho cây thanh long phát triển. Đây là loại thanh long ruột đỏ (hoặc đôi khi ruột trắng, tùy giống), được người dân địa phương chăm sóc theo phương pháp truyền thống kết hợp kỹ thuật hiện đại, mang lại chất lượng cao và vị ngon đặc trưng.
+                                Thanh long Tân Trụ là loại thanh long đặc sản được trồng chủ yếu tại huyện Tân Trụ, tỉnh
+                                Long An – một vùng đất thuộc Đồng bằng sông Cửu Long, nổi tiếng với điều kiện thổ nhưỡng
+                                và khí hậu thuận lợi cho cây thanh long phát triển. Đây là loại thanh long ruột đỏ (hoặc
+                                đôi khi ruột trắng, tùy giống), được người dân địa phương chăm sóc theo phương pháp
+                                truyền thống kết hợp kỹ thuật hiện đại, mang lại chất lượng cao và vị ngon đặc trưng.
                             </div>
 
                         </div>
@@ -534,7 +704,11 @@
                             <div class="category">Đặc sản</div>
                             <h3 class="name">Thanh long Tân Trụ</h3>
                             <div class="desc">
-                                Thanh long Tân Trụ là loại thanh long đặc sản được trồng chủ yếu tại huyện Tân Trụ, tỉnh Long An – một vùng đất thuộc Đồng bằng sông Cửu Long, nổi tiếng với điều kiện thổ nhưỡng và khí hậu thuận lợi cho cây thanh long phát triển. Đây là loại thanh long ruột đỏ (hoặc đôi khi ruột trắng, tùy giống), được người dân địa phương chăm sóc theo phương pháp truyền thống kết hợp kỹ thuật hiện đại, mang lại chất lượng cao và vị ngon đặc trưng.
+                                Thanh long Tân Trụ là loại thanh long đặc sản được trồng chủ yếu tại huyện Tân Trụ, tỉnh
+                                Long An – một vùng đất thuộc Đồng bằng sông Cửu Long, nổi tiếng với điều kiện thổ nhưỡng
+                                và khí hậu thuận lợi cho cây thanh long phát triển. Đây là loại thanh long ruột đỏ (hoặc
+                                đôi khi ruột trắng, tùy giống), được người dân địa phương chăm sóc theo phương pháp
+                                truyền thống kết hợp kỹ thuật hiện đại, mang lại chất lượng cao và vị ngon đặc trưng.
                             </div>
                             <div class="card-button">
                                 <button class="btn-popup">Tìm hiểu thêm</button>
@@ -548,7 +722,11 @@
                             </div>
                             <div class="title">Dưa hấu Tân Trụ</div>
                             <div class="desc">
-                                Dưa hấu Tân Trụ là một loại trái cây đặc sản được trồng tại huyện Tân Trụ, tỉnh Long An, thuộc vùng Đồng bằng sông Cửu Long. Đây là giống dưa hấu nổi tiếng với vị ngọt thanh, ruột đỏ tươi hoặc ruột vàng (tùy loại), vỏ mỏng, ít hạt, và chất lượng cao, nhờ điều kiện thổ nhưỡng đặc biệt của vùng đất phù sa giữa hai con sông Vàm Cỏ Đông và Vàm Cỏ Tây.
+                                Dưa hấu Tân Trụ là một loại trái cây đặc sản được trồng tại huyện Tân Trụ, tỉnh Long An,
+                                thuộc vùng Đồng bằng sông Cửu Long. Đây là giống dưa hấu nổi tiếng với vị ngọt thanh,
+                                ruột đỏ tươi hoặc ruột vàng (tùy loại), vỏ mỏng, ít hạt, và chất lượng cao, nhờ điều
+                                kiện thổ nhưỡng đặc biệt của vùng đất phù sa giữa hai con sông Vàm Cỏ Đông và Vàm Cỏ
+                                Tây.
                             </div>
                             <div class="card-button">
                                 <button class="btn-popup">Tìm hiểu thêm</button>
@@ -561,7 +739,11 @@
                             <div class="category">Đặc sản</div>
                             <h3 class="name">Dưa hấu Tân Trụ</h3>
                             <div class="desc">
-                                Dưa hấu Tân Trụ là một loại trái cây đặc sản được trồng tại huyện Tân Trụ, tỉnh Long An, thuộc vùng Đồng bằng sông Cửu Long. Đây là giống dưa hấu nổi tiếng với vị ngọt thanh, ruột đỏ tươi hoặc ruột vàng (tùy loại), vỏ mỏng, ít hạt, và chất lượng cao, nhờ điều kiện thổ nhưỡng đặc biệt của vùng đất phù sa giữa hai con sông Vàm Cỏ Đông và Vàm Cỏ Tây.
+                                Dưa hấu Tân Trụ là một loại trái cây đặc sản được trồng tại huyện Tân Trụ, tỉnh Long An,
+                                thuộc vùng Đồng bằng sông Cửu Long. Đây là giống dưa hấu nổi tiếng với vị ngọt thanh,
+                                ruột đỏ tươi hoặc ruột vàng (tùy loại), vỏ mỏng, ít hạt, và chất lượng cao, nhờ điều
+                                kiện thổ nhưỡng đặc biệt của vùng đất phù sa giữa hai con sông Vàm Cỏ Đông và Vàm Cỏ
+                                Tây.
                             </div>
                             <div class="card-button">
                                 <button class="btn-popup">Tìm hiểu thêm</button>
@@ -582,7 +764,7 @@
                 </div>
             </div>
         </section>
-        <section class="search" id="search">
+        <!-- <section class="search" id="search">
             <img src="https://staticv2.vnptigate.vn/logo/trong-dong.png" alt="Trống đồng" class="shape-1">
             <div class="container">
                 <div class="search-container">
@@ -604,7 +786,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
         <div class="scroll-top">
@@ -615,7 +797,7 @@
                 <div class="footer-top">
                     <div class="infor">
                         <!-- <div class="logo">
-                            <img src="./assets/images/logo.png" alt="logo">
+                            <img src="./assets/images/logo.gif" alt="Logo">
                         </div> -->
                         <div class="title">Cổng Thông tin chào mừng đại hội Đảng huyện Tân Trụ</div>
                         <div class="head">
@@ -640,10 +822,10 @@
                     </div>
                     <div class="group-menu">
                         <div class="menu">
-                            <a href="./projects.html" class="menu-item">Công trình</a>
-                            <a href="./results.html" class="menu-item">Kết quả</a>
+                            <a href="./projects.html" class="menu-item">Công trình Đại hội XI</a>
+                            <a href="./results.html" class="menu-item">Kết quả Thực hiện</a>
                             <a href="./highlight.html" class="menu-item">Điểm nổi bật</a>
-                            <a href="./orientation.html" class="menu-item">Định hướng XII</a>
+                            <a href="./orientation.html" class="menu-item">Định hướng Đại hội XII</a>
                             <a href="./camera360.html" class="menu-item">Camera360</a>
                         </div>
                         <div class="menu">

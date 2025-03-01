@@ -30,7 +30,7 @@ header {
 
 .header .navbar a {
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -57,7 +57,7 @@ header {
 .header .others {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 6px;
 }
 
 .header .others .menu-mb {
@@ -76,13 +76,33 @@ header {
     justify-content: center;
     cursor: pointer;
     padding: 6px;
-    border: 1px solid var(--black-color);
+    border: 1px solid var(--white-color);
     border-radius: 8px;
+    transition: all 0.3s linear;
+}
+
+.header .others .btn-search.active {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.header .others .btn-search.active img {
+    filter: brightness(0) invert(1);
 }
 
 .header .others .btn-search img {
     width: 18px;
     height: auto;
+}
+
+/**
+* 1200px
+**/
+
+@media screen and (max-width: 1200px) {
+    .header .navbar a {
+        font-size: 10px;
+    }
 }
 
 /**
@@ -100,7 +120,7 @@ header {
         position: absolute;
         background-color: #fff;
         top: 76px;
-        right: calc(-45%);
+        right: -450px;
         padding: 0px 0 48px;
         gap: 0px;
         align-items: start;
@@ -141,7 +161,7 @@ header {
 **/
 
 @media screen and (max-width: 576px) {
-    .header .navbar {
+    /* .header .navbar {
         right: calc(-80%);
-    } 
+    }  */
 }

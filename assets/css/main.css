@@ -84,7 +84,7 @@
     --white-color: #ffffff;
     --black-color: #222222;
     --red-color: #B71C1C;
-    --yellow-color: #FFD700;
+    --yellow-color: #fad10e;
     --grey-light-color: #F5F5F5;
     --green-color: #2E7D32;
     /* --primary-color: #B71C1C; */
@@ -194,6 +194,44 @@ h1 {
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 12px;
+}
+
+.dropdown-toggle {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    /* border: 1px solid var(--black-color); */
+    border-radius: 8px;
+    padding: 0px 6px;
+    height: 32px;
+}
+
+.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-toggle img {
+    height: 22px;
+    width: auto;
+}
+
+.dropdown-item {
+    font-size: 14px;
+    padding-block: 8px;
+    transition: all 0.3s linear;
+}
+
+.dropdown-menu {
+    padding-block: 0;
+}
+
+.dropdown-item:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-color-2);
 }
 
 /**
