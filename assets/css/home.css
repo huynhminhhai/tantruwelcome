@@ -1357,7 +1357,7 @@ th {
 
 @media screen and (max-width: 1300px) {
     .banner .swiper-slide img {
-        height: 45vh;
+        height: 35vh;
     }
 }
 
@@ -1372,7 +1372,7 @@ th {
     }
 
     .banner .swiper-slide img {
-        height: 40vh;
+        height: 30vh;
         object-position: right;
     }
 
@@ -1471,12 +1471,12 @@ th {
     **/
 
     .banner .swiper-slide img {
-        height: 30vh;
+        height: 25vh;
     }
 
     .banner.banner-sub .swiper-slide img {
-        height: 35vh;
-        object-position: right;
+        height: 25vh;
+        object-position: 65%;
     }
 
     /* .banner.banner-sub .banner-bg img {
@@ -1604,7 +1604,7 @@ th {
 
     .banner.banner-sub .swiper-slide img {
         height: 20vh;
-        object-position: right;
+        object-position: 72%;
     }
 
     /* .banner.banner-sub .banner-bg img {
